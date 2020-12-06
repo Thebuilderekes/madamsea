@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(images/crabs.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5)), url(images/crabs.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+html {
+  padding: 0 30px;
+}
+
+.main-header h1 {
+  color: #fff;
+}
+
+.navbar ul {
+  text-decoration: none;
+  display: inline;
+  float: right;
+  list-style: none;
+  color: #fff;
+}
+
+.navbar ul li {
+  float: left;
+  list-style: none;
+  padding-left: 20px;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar ul li a:hover {
+  color: grey;
+}
+
+.services-header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.offers h2 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.offers .crab-section {
+  width: 31%;
+  background-color: #dad3d3;
+  margin-right: 30px;
+}
+
+.offers .fish-section {
+  width: 31%;
+  background-color: #dad3d3;
+  margin-right: 30px;
+}
+
+.offers .prawn-section {
+  width: 31%;
+  background-color: #dad3d3;
+}
+
+.offers p {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.offers .seafood-photo {
+  text-align: center;
+}
+
+.offers2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.offers2 h2 {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.offers2 .crab-section {
+  width: 31%;
+  background-color: #dad3d3;
+  margin-right: 30px;
+}
+
+.offers2 .fish-section {
+  width: 31%;
+  background-color: #dad3d3;
+  margin-right: 30px;
+}
+
+.offers2 .prawn-section {
+  width: 31%;
+  background-color: #dad3d3;
+}
+
+.offers2 p {
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.offers2 .seafood-photo {
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

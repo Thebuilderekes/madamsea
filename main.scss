@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$font-color: #fff;
+$section-color: rgb(218, 211, 211);
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5)), url(images/crabs.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+html {
+  padding: 0 30px;
+}
+.main-header {
+  h1 {
+    color: $font-color;
+  }
+}
+.navbar ul {
+  text-decoration: none;
+  display: inline;
+  float: right;
+  list-style: none;
+  color: $font-color;
+
+  li {
+    float: left;
+    list-style: none;
+    padding-left: 20px;
+    margin-right: 20px;
+
+    a {
+      color: $font-color;
+      text-decoration: none;
+      font-size: 20px;
+    }
+
+    a:hover {
+      color: grey;
+    }
+  }
+}
+
+.services-header {
+  text-align: center;
+
+  margin-top: 50px;
+}
+
+.offers {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  
+    h2 {
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+  
+    .crab-section {
+      width: 31%;
+  
+      background-color: $section-color;
+      margin-right: 30px;
+    }
+  
+    .fish-section {
+      width: 31%;
+      background-color: $section-color;
+      margin-right: 30px;
+  
+    }
+  
+    .prawn-section{
+      width: 31%;
+      background-color: $section-color;
+       
+    }
+   
+    p{
+        padding: 0 10px;
+        font-weight: bold;
+    }
+    .seafood-photo {
+        text-align: center;
+
+    }
+}
+
+
+.offers2 {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  
+    h2 {
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+  
+    .crab-section {
+      width: 31%;
+  
+      background-color: $section-color;
+      margin-right: 30px;
+    }
+  
+    .fish-section {
+      width: 31%;
+      background-color: $section-color;
+      margin-right: 30px;
+  
+    }
+  
+    .prawn-section{
+      width: 31%;
+      background-color: $section-color;
+       
+    }
+   
+    p{
+        padding: 0 10px;
+        font-weight: bold;
+    }
+    .seafood-photo {
+        text-align: center;
+
+    }
+}
