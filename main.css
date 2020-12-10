@@ -1,3 +1,4 @@
+@import url(/css/font.css);
 * {
   margin: 0;
   padding: 0;
@@ -5,32 +6,135 @@
           box-sizing: border-box;
 }
 
+/*-------------------------------------------- */
+/*            root color area                  */
+/*---------------------------------------------*/
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  /*
+80% {
+       transform: translateX(10px);
+ }
+*/
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  /*
+80% {
+       transform: translateX(10px);
+ }
+*/
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  /*
+80% {
+       transform: translateX(10px);
+ }
+*/
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  /*
+80% {
+       transform: translateX(10px);
+ }
+*/
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+/*-------------------------------------------- */
+/*            root color area end              */
+/*---------------------------------------------*/
 body {
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  margin: 0 20px;
+}
+
+/*-------------------------------------------- */
+/*               Header area                   */
+/*---------------------------------------------*/
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5))), url(images/crabs.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5)), url(images/crabs.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.294))), url(images/crabs.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.294) rgba(0, 0, 0, 0.5)), url(images/crabs.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
+  padding: 0 20px;
 }
 
-html {
-  padding: 0 30px;
+.main-header .hero-text {
+  text-align: center;
+  float: left;
 }
 
 .main-header h1 {
+  color: #0fb6e9;
+  font-weight: 700;
+}
+
+.main-header h3 {
   color: #fff;
+  font-style: italic;
+}
+
+/*-------------------------------------------- */
+/*            Header area end                  */
+/*---------------------------------------------*/
+/*-------------------------------------------- */
+/*               Navbar area                   */
+/*---------------------------------------------*/
+.navbar {
+  display: inline;
 }
 
 .navbar ul {
   text-decoration: none;
-  display: inline;
-  float: right;
-  list-style: none;
-  color: #fff;
+  display: inline !important;
+  float: right !important;
+  list-style: none !important;
+  color: #fff !important;
+  margin-top: 50px;
 }
 
 .navbar ul li {
@@ -47,91 +151,120 @@ html {
 }
 
 .navbar ul li a:hover {
-  color: grey;
+  color: #0fb6e9;
 }
 
+/*-------------------------------------------- */
+/*               Navbar area end               */
+/*---------------------------------------------*/
+/*-------------------------------------------- */
+/*               Services area                 */
+/*---------------------------------------------*/
 .services-header {
   text-align: center;
   margin-top: 50px;
 }
 
-.offers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.services-text {
+  font-weight: 600;
+  color: #2846ca;
+  font-size: 20px;
+}
+
+.services-section1 {
   margin-top: 30px;
 }
 
-.offers h2 {
+.services-section1 h2 {
   text-align: center;
   margin: 1.5rem 0;
 }
 
-.offers .crab-section {
-  width: 31%;
+.services-section1 .fish-section {
   background-color: #dad3d3;
-  margin-right: 30px;
+  margin-bottom: 20px;
+  margin: 0 0 0 -20px;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
-.offers .fish-section {
-  width: 31%;
+.services-section1 .chicken-section {
   background-color: #dad3d3;
-  margin-right: 30px;
+  margin-bottom: 20px;
+  margin: 0 10px;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
 }
 
-.offers .prawn-section {
-  width: 31%;
+.services-section1 .shrimp-section {
   background-color: #dad3d3;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
 }
 
-.offers p {
+p {
   padding: 0 10px;
   font-weight: bold;
 }
 
-.offers .seafood-photo {
+.seafood-photo {
   text-align: center;
+  overflow: hidden;
 }
 
-.offers2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.services-section2 {
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
-.offers2 h2 {
+.services-section2 h2 {
   text-align: center;
   margin: 1.5rem 0;
 }
 
-.offers2 .crab-section {
-  width: 31%;
+.services-section2 .crab-section {
   background-color: #dad3d3;
-  margin-right: 30px;
+  margin-bottom: 20px;
+  margin: 0 0 0 -20px;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
 }
 
-.offers2 .fish-section {
-  width: 31%;
+.services-section2 .prawn-section {
   background-color: #dad3d3;
-  margin-right: 30px;
+  margin-bottom: 20px;
+  margin: 0 10px;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
 }
 
-.offers2 .prawn-section {
-  width: 31%;
+.services-section2 .gizzard-section {
   background-color: #dad3d3;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
 }
 
-.offers2 p {
-  padding: 0 10px;
-  font-weight: bold;
-}
-
-.offers2 .seafood-photo {
+/*-------------------------------------------- */
+/*               Services area end             */
+/*---------------------------------------------*/
+/*-------------------------------------------- */
+/*               Gallery area                  */
+/*---------------------------------------------*/
+.gallery-header {
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */
