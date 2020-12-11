@@ -7,9 +7,20 @@
 /*-------------------------------------------- */
 /*            root color area                  */
 /*---------------------------------------------*/
-$primaryfont-color: #fff;
+$primaryfont-color: #ffffff;
 $headerfont-color: #0fb6e9;
-$section-color: rgb(218, 211, 211);
+$section-color: #c2f1fd;
+
+/*-------------------------------------------- */
+/*            root color area end              */
+/*---------------------------------------------*/
+
+
+
+
+/*-------------------------------------------- */
+/*            keyframes                        */
+/*---------------------------------------------*/
 
 
 
@@ -44,8 +55,9 @@ $section-color: rgb(218, 211, 211);
     transform: translate(0);
   }
 }
+
 /*-------------------------------------------- */
-/*            root color area end              */
+/*            keyframes end                    */
 /*---------------------------------------------*/
 
 body {
@@ -76,7 +88,7 @@ header {
   }
   h1 {
     color: $headerfont-color;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   h3 {
@@ -226,3 +238,9 @@ header {
  margin-bottom: 30px;
 }
 
+
+.carousel-item > img {
+
+  
+
+}

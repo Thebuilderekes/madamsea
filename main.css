@@ -9,6 +9,12 @@
 /*-------------------------------------------- */
 /*            root color area                  */
 /*---------------------------------------------*/
+/*-------------------------------------------- */
+/*            root color area end              */
+/*---------------------------------------------*/
+/*-------------------------------------------- */
+/*            keyframes                        */
+/*---------------------------------------------*/
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -81,7 +87,7 @@
 }
 
 /*-------------------------------------------- */
-/*            root color area end              */
+/*            keyframes end                    */
 /*---------------------------------------------*/
 body {
   font-family: "Poppins", sans-serif;
@@ -110,11 +116,11 @@ header {
 
 .main-header h1 {
   color: #0fb6e9;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .main-header h3 {
-  color: #fff;
+  color: #ffffff;
   font-style: italic;
 }
 
@@ -133,7 +139,7 @@ header {
   display: inline !important;
   float: right !important;
   list-style: none !important;
-  color: #fff !important;
+  color: #ffffff !important;
   margin-top: 50px;
 }
 
@@ -145,7 +151,7 @@ header {
 }
 
 .navbar ul li a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   font-size: 20px;
 }
@@ -181,7 +187,7 @@ header {
 }
 
 .services-section1 .fish-section {
-  background-color: #dad3d3;
+  background-color: #c2f1fd;
   margin-bottom: 20px;
   margin: 0 0 0 -20px;
   -webkit-animation-name: moveInLeft;
@@ -191,7 +197,7 @@ header {
 }
 
 .services-section1 .chicken-section {
-  background-color: #dad3d3;
+  background-color: #c2f1fd;
   margin-bottom: 20px;
   margin: 0 10px;
   -webkit-animation-name: moveInRight;
@@ -201,7 +207,7 @@ header {
 }
 
 .services-section1 .shrimp-section {
-  background-color: #dad3d3;
+  background-color: #c2f1fd;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   -webkit-animation-duration: 8s;
@@ -229,7 +235,7 @@ p {
 }
 
 .services-section2 .crab-section {
-  background-color: #dad3d3;
+  background-color: #c2f1fd;
   margin-bottom: 20px;
   margin: 0 0 0 -20px;
   -webkit-animation-name: moveInRight;
@@ -239,7 +245,7 @@ p {
 }
 
 .services-section2 .prawn-section {
-  background-color: #dad3d3;
+  background-color: #c2f1fd;
   margin-bottom: 20px;
   margin: 0 10px;
   -webkit-animation-name: moveInLeft;
@@ -249,7 +255,7 @@ p {
 }
 
 .services-section2 .gizzard-section {
-  background-color: #dad3d3;
+  background-color: #c2f1fd;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
   -webkit-animation-duration: 14s;
