@@ -123,7 +123,7 @@ a {
 
 .navbar-dark .navbar-nav .nav-link {
   color: white;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 /*-------------------------------------------- */
@@ -421,9 +421,12 @@ p {
   height: 30px;
 }
 
-/*------------------------------------------------*/
-/* ABOUT SECTION CODES */
-/*------------------------------------------------*/
+/*-------------------------------------------- */
+/*               footer area end             */
+/*---------------------------------------------*/
+/*-------------------------------------------- */
+/*               About Us page area            */
+/*---------------------------------------------*/
 .back-img {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/aboutpage.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/aboutpage.jpg);
@@ -432,7 +435,7 @@ p {
 }
 
 .about {
-  font-family: "Lato";
+  font-family: "Poppins";
   text-align: center;
   color: white;
   -webkit-transition: 3s;
@@ -491,6 +494,9 @@ p {
   }
   .hero-text_primary__sub {
     font-size: 30px;
+  }
+  .nav-link a {
+    font-weight: 700;
   }
   .services-header {
     color: #ffffff;
