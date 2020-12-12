@@ -12,89 +12,8 @@
 /*-------------------------------------------- */
 /*            root color area end              */
 /*---------------------------------------------*/
-/*-------------------------------------------- */
-/*            keyframes                        */
-/*---------------------------------------------*/
-@-webkit-keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-  }
-  /*
-80% {
-       transform: translateX(10px);
- }
-*/
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-  }
-  /*
-80% {
-       transform: translateX(10px);
- }
-*/
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-@-webkit-keyframes moveInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-  /*
-80% {
-       transform: translateX(10px);
- }
-*/
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(100px);
-            transform: translateX(100px);
-  }
-  /*
-80% {
-       transform: translateX(10px);
- }
-*/
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-/*-------------------------------------------- */
-/*            keyframes end                    */
-/*---------------------------------------------*/
 body {
-  font-family: "Poppins", sans-serif;
-}
-
-html {
-  margin: 0 20px;
+  font-family: "Poppins";
 }
 
 /*-------------------------------------------- */
@@ -109,12 +28,29 @@ header {
   padding: 0 20px;
 }
 
-.main-header .hero-text {
-  text-align: center;
-  float: left;
+header .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
 }
 
-.main-header h1 {
+header .hero-text_primary {
+  font-weight: 600;
+  color: whitesmoke;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+header .hero-text_primary__sub {
+  color: #61cbf5;
+}
+
+.main-header .header-text {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  float: left;
   color: #0fb6e9;
   font-weight: 600;
 }
@@ -164,54 +100,192 @@ header {
 /*               Navbar area end               */
 /*---------------------------------------------*/
 /*-------------------------------------------- */
+/*            keyframes                        */
+/*---------------------------------------------*/
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInLeftStill {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInLeftStill {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  /*
+80% {
+       transform: translateX(10px);
+ }
+*/
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  /*
+80% {
+       transform: translateX(10px);
+ }
+*/
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+/*-------------------------------------------- */
+/*            keyframes end                    */
+/*---------------------------------------------*/
+/*-------------------------------------------- */
 /*               Services area                 */
 /*---------------------------------------------*/
 .services-header {
   text-align: center;
+  color: #0fb6e9;
   margin-top: 50px;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .services-text {
   font-weight: 600;
-  color: #2846ca;
+  color: #333030;
   font-size: 20px;
+  -webkit-animation-name: moveInLeftStill;
+          animation-name: moveInLeftStill;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
-.services-section1 {
+.services-section {
   margin-top: 30px;
 }
 
-.services-section1 h2 {
+.services-section h3 {
   text-align: center;
   margin: 1.5rem 0;
 }
 
-.services-section1 .fish-section {
+.services-section .fish-section {
   background-color: #c2f1fd;
-  margin-bottom: 20px;
-  margin: 0 0 0 -20px;
+  margin: 0 10px 20px -30px;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+.services-section .chicken-section {
+  background-color: #c2f1fd;
+  margin: 0 10px 20px 0;
+  -webkit-animation-name: moveInLeft;
+          animation-name: moveInLeft;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.services-section .shrimp-section {
+  background-color: #c2f1fd;
+  margin: 0 0 20px 0;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
 }
 
-.services-section1 .chicken-section {
+.services-section .crab-section {
   background-color: #c2f1fd;
-  margin-bottom: 20px;
-  margin: 0 10px;
+  margin: 0 10px 20px -30px;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
-.services-section1 .shrimp-section {
+.services-section .prawn-section {
   background-color: #c2f1fd;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
-  -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  margin: 0 10px 20px 0;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.services-section .gizzard-section {
+  background-color: #c2f1fd;
+  margin-bottom: 20px;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 p {
@@ -224,44 +298,6 @@ p {
   overflow: hidden;
 }
 
-.services-section2 {
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-
-.services-section2 h2 {
-  text-align: center;
-  margin: 1.5rem 0;
-}
-
-.services-section2 .crab-section {
-  background-color: #c2f1fd;
-  margin-bottom: 20px;
-  margin: 0 0 0 -20px;
-  -webkit-animation-name: moveInRight;
-          animation-name: moveInRight;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
-}
-
-.services-section2 .prawn-section {
-  background-color: #c2f1fd;
-  margin-bottom: 20px;
-  margin: 0 10px;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
-}
-
-.services-section2 .gizzard-section {
-  background-color: #c2f1fd;
-  -webkit-animation-name: moveInRight;
-          animation-name: moveInRight;
-  -webkit-animation-duration: 14s;
-          animation-duration: 14s;
-}
-
 /*-------------------------------------------- */
 /*               Services area end             */
 /*---------------------------------------------*/
@@ -270,7 +306,108 @@ p {
 /*---------------------------------------------*/
 .gallery-header {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.carousel-inner {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 20px;
+}
+
+/*-------------------------------------------- */
+/*            Gallery area end                  */
+/*---------------------------------------------*/
+/*-------------------------------------------- */
+/*               footer  area                  */
+/*---------------------------------------------*/
+.main-footer {
+  width: 100%;
+  height: 20rem;
+  background-color: #5ba6e4;
+}
+
+.main-footer .social-links ul {
+  margin: 50px 0 0 0;
+  list-style: none;
+}
+
+.main-footer .social-links ul li {
+  color: white;
+  font-weight: 500;
+}
+
+.main-footer .social-links ul li h3 {
+  color: black;
+}
+
+.main-footer .social-links ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.main-footer .social-links ul li a:hover {
+  color: black;
+}
+
+.main-footer .social-links .social li {
+  display: inline;
+  padding-right: 10px;
+}
+
+.main-footer .social-links .menu-links li {
+  margin-bottom: 10px;
+}
+
+.ionicon {
+  width: 30px;
+  height: 30px;
+}
+
+/*------------------------------------------------ */
+/* MEDIA QUERIES CODES                    */
+/*------------------------------------------------*/
+/* iphone 6/7/8 and galaxy s5 */
+@media only screen and (min-width: 300px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Portrait and Landscape */
+  .container {
+    overflow: hidden;
+  }
+  .hero-text_primary__sub {
+    font-size: 30px;
+  }
+  .services-section .fish-section, .shrimp-section {
+    margin: 10px 0;
+  }
+  .services-section .chicken-section {
+    margin: 10px 0;
+  }
+  .services-section .crab-section {
+    margin: 10px 0;
+  }
+  .services-section .gizzard-section {
+    margin: 10px 0;
+  }
+  .services-section .prawn-section {
+    margin: 10px 0;
+  }
+  .carousel-inner {
+    height: 250px;
+  }
+  .main-footer {
+    width: 100%;
+    height: 40rem;
+  }
+}
+
+/* Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .container {
+    overflow: hidden;
+  }
+}
+
+/* 2436x1125px at 458ppi */
 /*# sourceMappingURL=main.css.map */

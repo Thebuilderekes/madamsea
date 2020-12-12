@@ -16,57 +16,13 @@ $section-color: #c2f1fd;
 /*---------------------------------------------*/
 
 
-
-
-/*-------------------------------------------- */
-/*            keyframes                        */
-/*---------------------------------------------*/
-
-
-
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  /*
-80% {
-       transform: translateX(10px);
- }
-*/
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-  /*
-80% {
-       transform: translateX(10px);
- }
-*/
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-
-/*-------------------------------------------- */
-/*            keyframes end                    */
-/*---------------------------------------------*/
-
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
 }
 
-html {
-  margin: 0 20px;
-}
+// html {
+//   margin: 0 10px;
+// }
 
 /*-------------------------------------------- */
 /*               Header area                   */
@@ -79,18 +35,44 @@ header {
   width: 100%;
   height: 100vh;
   padding: 0 20px;
+
+  .hero-text{ 
+    position: absolute;
+    top: 50%;
+    left: 20%;
+
+  
+}
+
+
+.hero-text_primary {
+  font-weight: 600;
+  color: whitesmoke;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+
+ 
+}
+
+.hero-text_primary__sub {
+color: #61cbf5;
+
+}
+
+
+
 }
 
 .main-header {
-  .hero-text {
+  .header-text {
+
+    font-family: "Poppins", sans-serif;
     text-align: center;
     float: left;
-  }
-  h1 {
     color: $headerfont-color;
     font-weight: 600;
   }
-
+ 
   h3 {
     color: $primaryfont-color;
     font-style: italic;
@@ -131,10 +113,67 @@ header {
     }
   }
 }
-
 /*-------------------------------------------- */
 /*               Navbar area end               */
 /*---------------------------------------------*/
+
+
+
+
+
+/*-------------------------------------------- */
+/*            keyframes                        */
+/*---------------------------------------------*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  
+80% {
+       transform: translateX(10px);
+ }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeftStill {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  /*
+80% {
+       transform: translateX(10px);
+ }
+*/
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+/*-------------------------------------------- */
+/*            keyframes end                    */
+/*---------------------------------------------*/
+
+
+
+
 
 /*-------------------------------------------- */
 /*               Services area                 */
@@ -142,90 +181,88 @@ header {
 
 .services-header {
   text-align: center;
-
+  color: $headerfont-color;
   margin-top: 50px;
+  animation-name: moveInRight;
+  animation-duration: 5s;
 }
 
 .services-text {
   font-weight: 600;
-  color: rgb(40, 70, 202);
+  color: rgb(51, 48, 48);
   font-size: 20px;
+  animation-name: moveInLeftStill;
+  animation-duration: 8s;
+  backface-visibility: hidden;
 }
-.services-section1 {
+.services-section {
   margin-top: 30px;
+  
 
-  h2 {
+  h3 {
     text-align: center;
     margin: 1.5rem 0;
   }
 
   .fish-section {
     background-color: $section-color;
-    margin-bottom: 20px;
-    margin: 0 0 0 -20px;
+    margin: 0 10px 20px -30px;
     animation-name: moveInLeft;
-    animation-duration: 4s;
+    animation-duration: 2s;
   }
 
   .chicken-section {
     background-color: $section-color;
-    margin-bottom: 20px;
-    margin: 0 10px;
-    animation-name: moveInRight;
-    animation-duration: 6s;
+    margin: 0 10px 20px 0;
+    animation-name: moveInLeft;
+    animation-duration: 3s;
   }
 
   .shrimp-section {
     background-color: $section-color;
+    margin: 0 0 20px 0;
     animation-name: moveInLeft;
-    animation-duration: 8s;
+    animation-duration: 4s;
+  }
+
+  .crab-section {
+    background-color: $section-color;
+    margin: 0 10px 20px -30px;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+  }
+
+  .prawn-section {
+    background-color: $section-color;
+    margin: 0 10px 20px 0;
+    animation-name: moveInRight;
+    animation-duration: 3s;
+  }
+
+  .gizzard-section {
+    background-color: $section-color;
+    margin-bottom: 20px;
+    animation-name: moveInRight;
+    animation-duration: 4s;
   }
 }
-  p {
-    padding: 0 10px;
-    font-weight: bold;
-  }
+p {
+  padding: 0 10px;
+  font-weight: bold;
+}
 
 .seafood-photo {
   text-align: center;
   overflow: hidden;
 }
-
-.services-section2 {
-  margin-top: 30px;
-  margin-bottom: 50px;
-  h2 {
-    text-align: center;
-    margin: 1.5rem 0;
-  }
-
-  .crab-section {
-    background-color: $section-color;
-    margin-bottom: 20px;
-    margin: 0 0 0 -20px;
-    animation-name: moveInRight;
-    animation-duration: 10s;
-  }
-
-  .prawn-section {
-    background-color: $section-color;
-    margin-bottom: 20px;
-    margin: 0 10px;
-    animation-name: moveInLeft;
-    animation-duration: 12s;
-  }
-
-  .gizzard-section {
-    background-color: $section-color;
-    animation-name: moveInRight;
-    animation-duration: 14s;
-  }
-
-}
-
 /*-------------------------------------------- */
 /*               Services area end             */
 /*---------------------------------------------*/
+
+
+
+
+
 
 /*-------------------------------------------- */
 /*               Gallery area                  */
@@ -234,13 +271,149 @@ header {
 .gallery-header {
   text-align: center;
 
-  margin-top: 50px;
- margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.carousel-inner {
+ width: 100%;
+ height: 500px;
+
+ margin-bottom:20px;
+  
+}
+
+/*-------------------------------------------- */
+/*            Gallery area end                  */
+/*---------------------------------------------*/
+
+
+
+/*-------------------------------------------- */
+/*               footer  area                  */
+/*---------------------------------------------*/
+
+
+.main-footer {
+
+  width: 100%;
+  height: 20rem;
+  background-color: rgb(91, 166, 228);
+    
+.social-links {
+
+  ul {
+    margin: 50px 0 0 0;
+    list-style: none;
+    
+      li{
+        color: rgb(255, 255, 255);
+      font-weight: 500;
+      }
+
+      li h3 {
+        color: black;
+      }
+   li a {
+      text-decoration:none;
+      color: rgb(255, 255, 255);
+      font-weight: 500;
+    }
+
+    li a:hover {
+      color: rgb(0, 0, 0);
+    }
+    
+}
+
+.social li {
+  display: inline;
+  padding-right: 10px;
+}
+
+.menu-links li {
+  margin-bottom: 10px;
+}
+}
+}
+
+.ionicon {
+  width: 30px;
+  height: 30px;
 }
 
 
-.carousel-item > img {
+/*------------------------------------------------ */
+/* MEDIA QUERIES CODES                    */
+/*------------------------------------------------*/
+
+/* iphone 6/7/8 and galaxy s5 */
+@media only screen and (min-width: 300px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
+/* Portrait and Landscape */
+   .container {
+     overflow: hidden;
+   }
+.hero-text_primary__sub {
+
+  font-size: 30px;
+}
+
+.services-section .fish-section, .shrimp-section {
+
+  margin: 10px 0;
+}
+
+.services-section .chicken-section {
+
+  margin: 10px 0;
+}
+.services-section .crab-section {
+
+  margin: 10px 0;
+}
+
+.services-section .gizzard-section {
+
+  margin: 10px 0;
+
+
+
+}
+
+.services-section .prawn-section {
+
+  margin: 10px 0;
+
+
+}
+
+
+.carousel-inner{
+
+  height:250px;
+}
+   .main-footer {
+     width: 100%;
+     height: 40rem;
+
+   }
+
+}
+/* Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+
+  .container {
+    overflow: hidden;
+  }
+
+}
+
+
+/* 2436x1125px at 458ppi */
+
+@media only screen and (device-width : 375px) and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
 
   
-
 }
