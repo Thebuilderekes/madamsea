@@ -34,6 +34,8 @@ header {
   background-size: cover;
   width: 100%;
   height: 100vh;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 header .hero-text {
@@ -43,16 +45,25 @@ header .hero-text {
 }
 
 header .hero-text_primary {
-  font-weight: 600;
-  color: whitesmoke;
+  font-weight: bolder;
+  color: #0ae8f0;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  font-size: 50px;
+}
+
+header .hero-text_primary .hero-text_primary_sub {
+  font-family: 'Arima Madurai', cursive;
+  margin: 0 0 0 10px;
+  color: whitesmoke;
+  font-size: 30px;
+  font-style: italic;
 }
 
 header .button-primary {
-  background-color: #61cbf5;
+  background-color: #5a82f0;
   border-radius: 10px;
   font-size: 25px;
   padding: 5px 5px;
@@ -70,29 +81,38 @@ header .button-primary:hover {
 header .button-primary a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 
 .main-header .main-header_text {
+  text-transform: uppercase;
   text-align: center;
   float: left;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .main-header .main-header_text h1 {
+  text-decoration: none;
+}
+
+.main-header .main-header_text h1 a span {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.main-header .main-header_text h1 a {
   font-weight: 700;
   font-family: "Pacifico", cursive;
-  margin: 20px 0 0 20px;
+  margin: 30px 0 0 30px;
+  color: #0ae8f0;
+  font-size: 40px;
+  text-decoration: none;
 }
 
-.main-header .main-header_text .main-header_sub {
-  font-family: "Pacifico", cursive;
-  margin: 0 0 0 10px;
-  color: #61cbf5;
-}
-
-.main-header h3 {
+h3 {
   color: #ffffff;
-  font-style: italic;
 }
 
 /*-------------------------------------------- */
@@ -403,7 +423,7 @@ p {
 /*---------------------------------------------*/
 .main-footer {
   width: 100%;
-  height: 20rem;
+  height: 24rem;
   background-color: #5ba6e4;
 }
 
@@ -445,6 +465,40 @@ p {
   height: 30px;
 }
 
+.design li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.design li a:hover {
+  color: #df480c;
+}
+
+.design li {
+  list-style: none;
+  float: right;
+}
+
+.design {
+  width: 100%;
+  margin-top: 20px;
+  float: right;
+}
+
+.copy li {
+  list-style: none;
+  float: left;
+  font-weight: bold;
+}
+
+.copy {
+  width: 100%;
+  margin-top: 20px;
+  float: right;
+}
+
 /*-------------------------------------------- */
 /*               footer area end             */
 /*---------------------------------------------*/
@@ -465,6 +519,7 @@ p {
   -webkit-transition: 3s;
   transition: 3s;
   padding: 20px 0 0 0;
+  font-style: normal;
 }
 
 .about:after {
@@ -480,7 +535,7 @@ p {
 
 .jumbotron {
   background-color: rgba(4, 9, 77, 0.424);
-  width: 80%;
+  width: 100%;
   margin: auto;
   margin-top: 1.5rem;
   border-radius: 0.5rem;
@@ -513,17 +568,47 @@ p {
   .container {
     overflow: hidden;
   }
-  h1 {
-    margin: 20px 0 0 10px;
+  h1 a span {
+    margin-right: 45px;
+  }
+  .main-header .main-header_text {
+    margin-right: 7px;
+  }
+  .hero-text .hero-text_primary {
+    font-size: 30px;
+  }
+  header .hero-text .hero-text_primary .hero-text_primary_sub {
+    margin-left: -2px;
+    font-size: 18px;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 54px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+  .navbar-collapse.collapsing {
+    height: auto;
+    -webkit-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+    left: -100%;
+  }
+  .navbar-collapse.show {
+    left: 0;
+    -webkit-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
   }
   .hero-text {
-    margin-top: 50px;
+    margin-top: 80px;
   }
   header .button-primary {
-    margin-left: -.2rem;
+    margin-left: -0.2rem;
   }
   .navbar-toggler {
-    background-color: rgba(13, 175, 240, 0.705);
+    background-color: #0ae8f088;
   }
   .nav-link a {
     font-weight: 700;
@@ -549,12 +634,33 @@ p {
   .services-section .prawn-section {
     margin: 10px 0;
   }
+  .jumbo-box {
+    margin-top: 30px;
+  }
+  .pre-jumbo {
+    width: 10%;
+  }
+  .jumbotron {
+    width: 80%;
+  }
+  .post-jumbo {
+    width: 10%;
+  }
+  .jumbotron p {
+    font-size: 16px;
+  }
   .carousel-inner {
     height: 250px;
   }
   .main-footer {
     width: 100%;
-    height: 40rem;
+    height: 45rem;
+  }
+  .design {
+    margin-top: 10px;
+  }
+  .design li a {
+    margin-left: -5px;
   }
 }
 
