@@ -590,6 +590,10 @@ p {
   .main-header .main-header_text {
     margin-right: 7px;
   }
+  .main-header .main-header_text
+h1 a span {
+    margin-left: 12px;
+  }
   .hero-text .hero-text_primary {
     font-size: 30px;
   }
