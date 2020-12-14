@@ -47,11 +47,15 @@ header .hero-text {
 header .hero-text_primary {
   font-weight: bolder;
   color: #0ae8f0;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
+  -webkit-animation-name: moveInLeftStill;
+          animation-name: moveInLeftStill;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   font-size: 50px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  overflow: hidden;
+  font-family: 'Arima Madurai', cursive;
 }
 
 header .hero-text_primary .hero-text_primary_sub {
@@ -63,12 +67,13 @@ header .hero-text_primary .hero-text_primary_sub {
 }
 
 header .button-primary {
-  background-color: #5a82f0;
+  background-color: #1fbaf8;
   border-radius: 10px;
   font-size: 25px;
   padding: 5px 5px;
   border-color: #61cbf5;
   margin-left: 7rem;
+  text-transform: uppercase;
 }
 
 header .button-primary:hover {
@@ -82,6 +87,7 @@ header .button-primary a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  font-family: 'Arima Madurai', cursive;
 }
 
 .main-header .main-header_text {
@@ -128,7 +134,7 @@ h3 {
 
 .navbar .navbar li {
   padding-left: 15px;
-  font-family: "Lato";
+  font-family: 'Arima Madurai', cursive;
   display: inline-block;
   font-weight: bold;
 }
@@ -150,6 +156,7 @@ h3 {
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: bold;
+  font-family: 'Arima Madurai', cursive;
 }
 
 a {
@@ -176,12 +183,8 @@ a {
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-  }
-  80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
   }
   100% {
     opacity: 1;
@@ -192,12 +195,8 @@ a {
 @keyframes moveInLeft {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
-  }
-  80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
   }
   100% {
     opacity: 1;
@@ -209,8 +208,8 @@ a {
 @-webkit-keyframes moveInLeftStill {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
   }
   100% {
     opacity: 1;
@@ -222,8 +221,8 @@ a {
 @keyframes moveInLeftStill {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-100px);
-            transform: translateX(-100px);
+    -webkit-transform: translateX(-80px);
+            transform: translateX(-80px);
   }
   100% {
     opacity: 1;
@@ -297,7 +296,7 @@ a {
 }
 
 .services-text {
-  font-weight: 600;
+  font-weight: 500;
   color: black;
   font-size: 20px;
   -webkit-animation-name: moveInLeftStill;
@@ -306,10 +305,15 @@ a {
           animation-duration: 8s;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+  font-family: 'Verdana';
 }
 
 .services-section {
   margin-top: 30px;
+  font-size: 18px;
+  font-family: 'Verdana';
+  font-weight: normal;
+  color: #1d1d1d;
 }
 
 .services-section h3 {
@@ -422,6 +426,7 @@ p {
   width: 100%;
   height: 24rem;
   background-color: #5ba6e4;
+  font-family: 'Arima Madurai', cursive;
 }
 
 .main-footer .social-links ul {
@@ -442,6 +447,7 @@ p {
   text-decoration: none;
   color: white;
   font-weight: 500;
+  font-family: 'Arima Madurai', cursive;
 }
 
 .main-footer .social-links ul li a:hover {
@@ -460,6 +466,11 @@ p {
 .ionicon {
   width: 30px;
   height: 30px;
+}
+
+.mt-5 {
+  width: 1200px;
+  color: white;
 }
 
 .design li a {
