@@ -41,6 +41,23 @@ header .hero-text {
   left: 20%;
 }
 
+header .hero-text .button-primary {
+  color: #ffffff;
+  background-color: #1fbaf8;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 2px 2px;
+  border-color: #61cbf5;
+  margin-left: 20rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+header .hero-text .button-primary:hover {
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
 header .hero-text_primary {
   font-weight: bolder;
   color: #0ae8f0;
@@ -61,30 +78,6 @@ header .hero-text_primary .hero-text_primary_sub {
   color: whitesmoke;
   font-size: 30px;
   font-style: italic;
-}
-
-header .button-primary {
-  background-color: #1fbaf8;
-  border-radius: 5px;
-  font-size: 20px;
-  padding: 2px 2px;
-  border-color: #61cbf5;
-  margin-left: 7rem;
-  text-transform: uppercase;
-}
-
-header .button-primary:hover {
-  border-color: #61cbf5;
-  color: #807878;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
-}
-
-header .button-primary a {
-  text-decoration: none;
-  color: white;
-  font-weight: normal;
-  font-family: 'Verdana';
 }
 
 .main-header .main-header_text {
@@ -604,7 +597,7 @@ h1 a span {
   .button-primary {
     width: 80px;
   }
-  .button-primary a {
+  .hero-text a .button-primary {
     font-weight: 600;
     font-size: 16px;
   }
@@ -631,8 +624,9 @@ h1 a span {
   .hero-text {
     margin-top: 80px;
   }
-  header .button-primary {
+  header .hero-text .button-primary {
     margin-left: -0.2rem;
+    padding: 0;
   }
   .navbar-toggler {
     background-color: #0ae8f088;
@@ -708,6 +702,9 @@ h1 a span {
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .container {
     overflow: hidden;
+  }
+  .main-header_text h1 a {
+    margin: 20px 50px 0 0;
   }
 }
 

@@ -45,6 +45,27 @@ header {
     position: absolute;
     top: 50%;
     left: 20%;
+
+
+    .button-primary {
+      color: $primaryfont-color;
+      background-color: #1fbaf8;
+      border-radius: 5px;
+      font-size: 30px;
+      padding: 2px 2px;
+      border-color: #61cbf5;
+      margin-left: 20rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      
+  
+      &:hover {
+       
+        
+        transform: translateY(3px);
+      }
+    }
+  
   }
 
   .hero-text_primary {
@@ -66,30 +87,11 @@ header {
     }
   }
 
-  .button-primary {
-    background-color: #1fbaf8;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 2px 2px;
-    border-color: #61cbf5;
-    margin-left: 7rem;
-    text-transform: uppercase;
-    
-
-    &:hover {
-      border-color: #61cbf5;
-      color: rgb(128, 120, 120);
-      transform: translateY(3px);
-    }
-  }
-
-  .button-primary a {
-    text-decoration: none;
-    color: white;
-    font-weight: normal;
-    font-family: 'Verdana';
-  }
+  
+  
 }
+
+
 
 .main-header {
   .main-header_text {
@@ -570,7 +572,7 @@ h1 a span{
    }
 
 
-  .button-primary a {
+   .hero-text a .button-primary {
     
     font-weight: 600 ;
     font-size: 16px;
@@ -608,8 +610,9 @@ h1 a span{
     margin-top: 80px;
   }
 
-  header .button-primary {
+  header .hero-text .button-primary {
     margin-left: -0.2rem;
+    padding: 0;
   }
 
   .navbar-toggler {
@@ -702,6 +705,12 @@ font-size: 16px;
   .container {
     overflow: hidden;
   }
+
+  .main-header_text h1 a {
+    margin: 20px 50px 0 0;
+  }
+
+  
 }
 
 /* 2436x1125px at 458ppi */
