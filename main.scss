@@ -57,7 +57,8 @@ header {
       margin-left: 20rem;
       text-transform: uppercase;
       font-weight: 700;
-      
+      animation-name: moveInRight;
+    animation-duration: 4s;
   
       &:hover {
        

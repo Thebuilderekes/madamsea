@@ -43,7 +43,7 @@ header .hero-text {
 
 header .hero-text .button-primary {
   color: #ffffff;
-  background-color: #1fbbf8;
+  background-color: #1fbaf8;
   border-radius: 5px;
   font-size: 30px;
   padding: 2px 2px;
@@ -51,6 +51,10 @@ header .hero-text .button-primary {
   margin-left: 20rem;
   text-transform: uppercase;
   font-weight: 700;
+  -webkit-animation-name: moveInRight;
+          animation-name: moveInRight;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 header .hero-text .button-primary:hover {
