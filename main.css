@@ -322,8 +322,8 @@ a {
   margin: 0 10px 20px -30px;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
 }
 
 .services-section .chicken-section {
@@ -331,8 +331,8 @@ a {
   margin: 0 10px 20px 0;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
 }
 
 .services-section .shrimp-section {
@@ -340,8 +340,8 @@ a {
   margin: 0 10px 20px 0;
   -webkit-animation-name: moveInLeft;
           animation-name: moveInLeft;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 8;
+          animation-duration: 8;
 }
 
 .services-section .crab-section {
@@ -349,8 +349,8 @@ a {
   margin: 0 10px 20px -30px;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
 }
 
 .services-section .gizzard-section {
@@ -358,8 +358,8 @@ a {
   margin: 0 10px 20px 0;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
 }
 
 .services-section .prawn-section {
@@ -367,8 +367,8 @@ a {
   margin: 0 10px 20px 0;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 14s;
+          animation-duration: 14s;
 }
 
 p {
