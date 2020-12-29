@@ -65,8 +65,8 @@ header .hero-text .button-primary:hover {
 header .hero-text_primary {
   font-weight: bolder;
   color: #0ae8f0;
-  -webkit-animation-name: moveInLeftStill;
-          animation-name: moveInLeftStill;
+  -webkit-animation-name: moveOutStill;
+          animation-name: moveOutStill;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
   font-size: 50px;
@@ -127,7 +127,7 @@ h3 {
 }
 
 .navbar .navbar li {
-  padding-left: 15px;
+  padding-left: 30px;
   font-family: 'Arima Madurai', cursive;
   display: inline-block;
   font-weight: bold;
@@ -143,12 +143,13 @@ h3 {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: #0fb6e9;
+  color: #0ae8f0;
 }
 
 .nav-link {
-  font-size: 20px;
+  font-size: 22px;
   letter-spacing: 1px;
+  margin-left: 30px;
   font-family: 'Lato';
 }
 
@@ -173,11 +174,11 @@ a {
 /*-------------------------------------------- */
 /*            keyframes                        */
 /*---------------------------------------------*/
-@-webkit-keyframes moveInLeft {
+@-webkit-keyframes moveOut {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(-80px);
-            transform: translateX(-80px);
+    -webkit-transform: translate3d(-10px);
+            transform: translate3d(-10px);
   }
   100% {
     opacity: 1;
@@ -185,7 +186,20 @@ a {
             transform: translate(0);
   }
 }
-@keyframes moveInLeft {
+@keyframes moveOut {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-10px);
+            transform: translate3d(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes moveOutStill {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-80px);
@@ -198,20 +212,7 @@ a {
   }
 }
 
-@-webkit-keyframes moveInLeftStill {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(-80px);
-            transform: translateX(-80px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-@keyframes moveInLeftStill {
+@keyframes moveOutStill {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-80px);
@@ -263,9 +264,6 @@ a {
 /*-------------------------------------------- */
 /*            keyframes end                    */
 /*---------------------------------------------*/
-/*-------------------------------------------- */
-/*               Services area                 */
-/*---------------------------------------------*/
 .services-header {
   text-align: center;
   color: black;
@@ -291,10 +289,10 @@ a {
 
 .services-text {
   font-weight: 500;
-  color: black;
+  color: #312f2f;
   font-size: 18px;
-  -webkit-animation-name: moveInLeftStill;
-          animation-name: moveInLeftStill;
+  -webkit-animation-name: moveOutStill;
+          animation-name: moveOutStill;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-backface-visibility: hidden;
@@ -307,8 +305,8 @@ a {
 .services-section {
   margin-top: 30px;
   font-size: 18px;
-  font-family: 'Verdana';
-  color: #1d1d1d;
+  font-family: Roboto, sans-serif;
+  color: #303c62;
 }
 
 .services-section h3 {
@@ -320,8 +318,8 @@ a {
 .services-section .fish-section {
   background-color: #82dff66b;
   margin: 0 10px 20px -30px;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
+  -webkit-animation-name: moveOut;
+          animation-name: moveOut;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
 }
@@ -329,46 +327,46 @@ a {
 .services-section .chicken-section {
   background-color: #82dff66b;
   margin: 0 10px 20px 0;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
-  -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  -webkit-animation-name: moveOut;
+          animation-name: moveOut;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 .services-section .shrimp-section {
   background-color: #82dff66b;
   margin: 0 10px 20px 0;
-  -webkit-animation-name: moveInLeft;
-          animation-name: moveInLeft;
-  -webkit-animation-duration: 8;
-          animation-duration: 8;
+  -webkit-animation-name: moveOut;
+          animation-name: moveOut;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
 }
 
 .services-section .crab-section {
   background-color: #82dff66b;
   margin: 0 10px 20px -30px;
-  -webkit-animation-name: moveInRight;
-          animation-name: moveInRight;
-  -webkit-animation-duration: 10s;
-          animation-duration: 10s;
+  -webkit-animation-name: moveOut;
+          animation-name: moveOut;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
 }
 
 .services-section .gizzard-section {
   background-color: #82dff66b;
   margin: 0 10px 20px 0;
-  -webkit-animation-name: moveInRight;
-          animation-name: moveInRight;
-  -webkit-animation-duration: 12s;
-          animation-duration: 12s;
+  -webkit-animation-name: moveOut;
+          animation-name: moveOut;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
 }
 
 .services-section .prawn-section {
   background-color: #82dff66b;
   margin: 0 10px 20px 0;
-  -webkit-animation-name: moveInRight;
-          animation-name: moveInRight;
-  -webkit-animation-duration: 14s;
-          animation-duration: 14s;
+  -webkit-animation-name: moveOut;
+          animation-name: moveOut;
+  -webkit-animation-duration: 9s;
+          animation-duration: 9s;
 }
 
 p {
@@ -423,7 +421,7 @@ p {
   width: 100%;
   height: 24rem;
   background-color: #5ba6e4;
-  font-family: 'Arima Madurai', cursive;
+  font-family: Roboto, sans-serif;
 }
 
 .main-footer .social-links ul {
@@ -448,7 +446,7 @@ p {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-family: 'Arima Madurai', cursive;
+  font-family: Roboto, sans-serif;
 }
 
 .main-footer .social-links ul li a:hover {
@@ -468,6 +466,7 @@ p {
 .ionicon {
   width: 30px;
   height: 30px;
+  fill: white;
 }
 
 .mt-5 {
@@ -553,9 +552,9 @@ p {
 }
 
 .jumbotron .jumbotron p {
-  font-family: "poppins";
+  font-family: Roboto, sans-serif;
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 0 0.5rem;
 }
 
