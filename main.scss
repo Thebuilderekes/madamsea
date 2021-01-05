@@ -18,11 +18,10 @@ $secondary-color: #0000;
 /*---------------------------------------------*/
 
 body {
-  
- 
   background-color: #d5ebfa;
- 
+
   background-size: cover;
+  background-attachment: fixed;
 }
 
 html {
@@ -47,7 +46,6 @@ header {
     top: 50%;
     left: 20%;
 
-
     .button-primary {
       color: $primaryfont-color;
       background-color: #1fbaf8;
@@ -55,19 +53,16 @@ header {
       font-size: 30px;
       padding: 2px 2px;
       border-color: #61cbf5;
-      margin-left: 20rem;
+
       text-transform: uppercase;
       font-weight: 700;
       animation-name: moveInRight;
-    animation-duration: 4s;
-  
+      animation-duration: 4s;
+
       &:hover {
-       
-        
         transform: translateY(3px);
       }
     }
-  
   }
 
   .hero-text_primary {
@@ -78,22 +73,16 @@ header {
     font-size: 50px;
     backface-visibility: hidden;
     overflow: hidden;
-    font-family: 'Arima Madurai', cursive;
+    font-family: "Arima Madurai", cursive;
 
     .hero-text_primary_sub {
-      font-family: 'Arima Madurai', cursive;
-      margin: 0 0 0 10px;
+      font-family: "Arima Madurai", cursive;
+
       color: whitesmoke;
       font-size: 30px;
-      font-style: italic;
     }
   }
-
-  
-  
 }
-
-
 
 .main-header {
   .main-header_text {
@@ -115,7 +104,7 @@ header {
 
     h1 a {
       font-weight: 700;
-      font-family: 'Arima Madurai', cursive;
+      font-family: "Arima Madurai", cursive;
       margin: 30px 0 0 30px;
       color: #0ae8f0;
       font-size: 40px;
@@ -137,11 +126,11 @@ h3 {
 
 .navbar {
   float: right;
-  margin: 20px 5px 10px 0;
+  margin: 20px 10px 10px 0;
 
   .navbar li {
     padding-left: 30px;
-    font-family: 'Arima Madurai', cursive;
+    font-family: "Arima Madurai", cursive;
     display: inline-block;
     font-weight: bold;
   }
@@ -162,7 +151,7 @@ h3 {
   font-size: 22px;
   letter-spacing: 1px;
   margin-left: 30px;
-  font-family: 'Lato';
+  font-family: "Lato";
 }
 
 a {
@@ -232,12 +221,11 @@ a {
 /*            keyframes end                    */
 /*---------------------------------------------*/
 
-
 .services-header {
   text-align: center;
   color: black;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 60px;
   animation-name: moveInRight;
   animation-duration: 3s;
   text-transform: uppercase;
@@ -250,7 +238,7 @@ a {
     margin: 0 auto;
     background-color: #0fb6e9;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
   }
 }
 
@@ -262,23 +250,24 @@ a {
   animation-duration: 3s;
   backface-visibility: hidden;
   animation-timing-function: ease-in;
- 
-  font-family: 'Verdana';
+
+  font-family: "Verdana";
 }
 .services-section {
   margin-top: 30px;
   font-size: 18px;
   font-family: Roboto, sans-serif;
 
-  color: rgb(48, 60, 98);
-
+  color: rgb(0, 0, 0);
 
   h3 {
     text-align: center;
     margin: 1.5rem 0;
     color: black;
   }
-
+  .paragraph {
+     font-weight: lighter;
+  }
   .fish-section {
     background-color: $section-color;
     margin: 0 10px 20px -30px;
@@ -316,7 +305,7 @@ a {
   .prawn-section {
     background-color: $section-color;
     margin: 0 10px 20px 0;
-    animation-name:moveOut;
+    animation-name: moveOut;
     animation-duration: 9s;
   }
 }
@@ -341,7 +330,7 @@ p {
   text-align: center;
   color: black;
   font-weight: 700;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
   text-transform: uppercase;
 
@@ -352,8 +341,8 @@ p {
     content: "";
     margin: 0 auto;
     background-color: #0fb6e9;
-    margin-top: 30px;
-    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 }
 
@@ -378,8 +367,6 @@ p {
   background-color: rgb(91, 166, 228);
   font-family: Roboto, sans-serif;
   .social-links {
-
-
     ul {
       margin: 50px 0 0 0;
       list-style: none;
@@ -391,7 +378,6 @@ p {
 
       li h3 {
         color: black;
-      
       }
 
       li .follow {
@@ -402,6 +388,7 @@ p {
         color: rgb(255, 255, 255);
         font-weight: 500;
         font-family: Roboto, sans-serif;
+        font-size: 16px;
       }
 
       li a:hover {
@@ -425,13 +412,11 @@ p {
   width: 30px;
   height: 30px;
   fill: white;
-
 }
 
 .mt-5 {
   width: 1200px;
   color: white;
-
 }
 .design li a {
   text-decoration: none;
@@ -502,7 +487,7 @@ p {
 }
 .jumbotron {
   background-color: rgba(4, 9, 77, 0.424);
-  width:100%;
+  width: 100%;
   margin: auto;
   margin-top: 1.5rem;
   border-radius: 0.5rem;
@@ -541,16 +526,14 @@ p {
     margin-right: 45px;
   }
 
-  
   .main-header .main-header_text {
     margin-right: 7px;
   }
-  .main-header .main-header_text 
-h1 a span{
-  margin-left: 12px ;
-}
+  .main-header .main-header_text h1 a span {
+    margin-left: 12px;
+  }
 
-.hero-text .hero-text_primary {
+  .hero-text .hero-text_primary {
     font-size: 30px;
   }
 
@@ -558,19 +541,15 @@ h1 a span{
     margin-left: -2px;
     font-size: 18px;
   }
-   .button-primary {
-     width: 80px;
-   }
-
-
-   .hero-text a .button-primary {
-    
-    font-weight: 600 ;
-    font-size: 16px;
-    
-    
+  .button-primary {
+    width: 80px;
   }
- 
+
+  .hero-text a .button-primary {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
   .hero-text {
     margin-top: 80px;
   }
@@ -586,17 +565,15 @@ h1 a span{
   .nav-link a {
     font-weight: 700;
   }
-.gallery-header {
-
-  font-size: 24px;
-}
+  .gallery-header {
+    font-size: 24px;
+  }
   .services-header {
     color: black;
     font-size: 24px;
-    
   }
-  .services-text{
-font-size: 16px;
+  .services-text {
+    font-size: 16px;
   }
   .services-section .fish-section {
     margin: 0 0 10px 0;
@@ -647,14 +624,13 @@ font-size: 16px;
     width: 100%;
     height: 45rem;
   }
-    h3 {
-
+  h3 {
     font-size: 22px;
-   }
+  }
 
-   p {
-     font-size: 16px;
-   }
+  p {
+    font-size: 16px;
+  }
   .design {
     margin-top: 10px;
   }
@@ -662,7 +638,11 @@ font-size: 16px;
     margin-left: -5px;
   }
 
- 
+
+  .social-links .social li a {
+
+    margin-left:  -10px;
+  }
 }
 
 /* Landscape */
@@ -674,8 +654,6 @@ font-size: 16px;
   .main-header_text h1 a {
     margin: 20px 50px 0 0;
   }
-
-  
 }
 
 /* 2436x1125px at 458ppi */

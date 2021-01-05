@@ -15,6 +15,7 @@
 body {
   background-color: #d5ebfa;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 html {
@@ -48,7 +49,6 @@ header .hero-text .button-primary {
   font-size: 30px;
   padding: 2px 2px;
   border-color: #61cbf5;
-  margin-left: 20rem;
   text-transform: uppercase;
   font-weight: 700;
   -webkit-animation-name: moveInRight;
@@ -73,15 +73,13 @@ header .hero-text_primary {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   overflow: hidden;
-  font-family: 'Arima Madurai', cursive;
+  font-family: "Arima Madurai", cursive;
 }
 
 header .hero-text_primary .hero-text_primary_sub {
-  font-family: 'Arima Madurai', cursive;
-  margin: 0 0 0 10px;
+  font-family: "Arima Madurai", cursive;
   color: whitesmoke;
   font-size: 30px;
-  font-style: italic;
 }
 
 .main-header .main-header_text {
@@ -104,7 +102,7 @@ header .hero-text_primary .hero-text_primary_sub {
 
 .main-header .main-header_text h1 a {
   font-weight: 700;
-  font-family: 'Arima Madurai', cursive;
+  font-family: "Arima Madurai", cursive;
   margin: 30px 0 0 30px;
   color: #0ae8f0;
   font-size: 40px;
@@ -123,12 +121,12 @@ h3 {
 /*---------------------------------------------*/
 .navbar {
   float: right;
-  margin: 20px 5px 10px 0;
+  margin: 20px 10px 10px 0;
 }
 
 .navbar .navbar li {
   padding-left: 30px;
-  font-family: 'Arima Madurai', cursive;
+  font-family: "Arima Madurai", cursive;
   display: inline-block;
   font-weight: bold;
 }
@@ -150,7 +148,7 @@ h3 {
   font-size: 22px;
   letter-spacing: 1px;
   margin-left: 30px;
-  font-family: 'Lato';
+  font-family: "Lato";
 }
 
 a {
@@ -268,7 +266,7 @@ a {
   text-align: center;
   color: black;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 60px;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
   -webkit-animation-duration: 3s;
@@ -284,7 +282,7 @@ a {
   margin: 0 auto;
   background-color: #0fb6e9;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .services-text {
@@ -299,20 +297,24 @@ a {
           backface-visibility: hidden;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
-  font-family: 'Verdana';
+  font-family: "Verdana";
 }
 
 .services-section {
   margin-top: 30px;
   font-size: 18px;
   font-family: Roboto, sans-serif;
-  color: #303c62;
+  color: black;
 }
 
 .services-section h3 {
   text-align: center;
   margin: 1.5rem 0;
   color: black;
+}
+
+.services-section .paragraph {
+  font-weight: lighter;
 }
 
 .services-section .fish-section {
@@ -389,7 +391,7 @@ p {
   text-align: center;
   color: black;
   font-weight: 700;
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
   text-transform: uppercase;
 }
@@ -401,8 +403,8 @@ p {
   content: "";
   margin: 0 auto;
   background-color: #0fb6e9;
-  margin-top: 30px;
-  margin-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .carousel-inner {
@@ -447,6 +449,7 @@ p {
   color: white;
   font-weight: 500;
   font-family: Roboto, sans-serif;
+  font-size: 16px;
 }
 
 .main-footer .social-links ul li a:hover {
@@ -586,8 +589,7 @@ p {
   .main-header .main-header_text {
     margin-right: 7px;
   }
-  .main-header .main-header_text
-h1 a span {
+  .main-header .main-header_text h1 a span {
     margin-left: 12px;
   }
   .hero-text .hero-text_primary {
@@ -678,6 +680,9 @@ h1 a span {
   }
   .design li a {
     margin-left: -5px;
+  }
+  .social-links .social li a {
+    margin-left: -10px;
   }
 }
 
