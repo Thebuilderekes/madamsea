@@ -51,6 +51,7 @@ header .hero-text .button-primary {
   font-size: 30px;
   padding: 2px 2px;
   border-color: #61cbf5;
+  font-family: "Arima Madurai", cursive;
   text-transform: uppercase;
   font-weight: 700;
   -webkit-animation-name: moveInRight;
@@ -123,7 +124,7 @@ h3 {
 /*---------------------------------------------*/
 .navbar {
   float: right;
-  margin: 20px 10px 10px 0;
+  margin: 20px 40px 10px 0;
 }
 
 .navbar .navbar li {
