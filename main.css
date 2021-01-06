@@ -124,11 +124,10 @@ h3 {
 /*---------------------------------------------*/
 .navbar {
   float: right;
-  margin: 20px 40px 10px 0;
+  margin: 20px 40px 0 0;
 }
 
 .navbar .navbar li {
-  padding-left: 30px;
   font-family: "Arima Madurai", cursive;
   display: inline-block;
   font-weight: bold;
@@ -156,7 +155,6 @@ h3 {
 
 a {
   font-size: 22px;
-  font-family: "Poppins";
   font-weight: 300;
 }
 
