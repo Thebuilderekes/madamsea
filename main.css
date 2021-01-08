@@ -13,7 +13,7 @@
 /*            root color area end              */
 /*---------------------------------------------*/
 body {
-  background-color: #BEDCFE;
+  background-color: #89DAFF;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -113,7 +113,7 @@ header .hero-text_primary .hero-text_primary_sub {
 }
 
 h3 {
-  color: #ffffff;
+  color: whitesmoke;
 }
 
 /*-------------------------------------------- */
@@ -147,7 +147,7 @@ h3 {
 }
 
 .nav-link {
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   margin-left: 20px;
   font-family: "Lato";
@@ -287,7 +287,7 @@ a {
   margin: 0 auto;
   background-color: #0fb6e9;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .services-text {
@@ -303,7 +303,6 @@ a {
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   font-family: "Verdana";
-  -bottom: 30px;
 }
 
 .services-section {
@@ -322,6 +321,7 @@ a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   color: black;
+  margin-bottom: 50px;
 }
 
 .services-section h3 {
@@ -412,7 +412,7 @@ a {
 }
 
 p {
-  padding: 0 10px;
+  padding: 0 30px;
   font-weight: bold;
 }
 
@@ -444,7 +444,7 @@ p {
   margin: 0 auto;
   background-color: #0fb6e9;
   margin-top: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .carousel-inner {

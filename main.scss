@@ -18,7 +18,7 @@ $secondary-color: #0000;
 /*---------------------------------------------*/
 
 body {
-  background-color: #BEDCFE;
+  background-color: #89DAFF;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -115,7 +115,7 @@ header {
 }
 
 h3 {
-  color: $primaryfont-color;
+  color: whitesmoke;
 }
 /*-------------------------------------------- */
 /*            Header area end                  */
@@ -150,7 +150,7 @@ h3 {
 }
 
 .nav-link {
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   margin-left: 20px;
   font-family: "Lato";
@@ -245,7 +245,7 @@ a {
     margin: 0 auto;
     background-color: #0fb6e9;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
@@ -258,7 +258,6 @@ a {
   backface-visibility: hidden;
   animation-timing-function: ease-in;
  font-family: "Verdana";
- -bottom: 30px;
 }
 .services-section {
   margin-top: 30px;
@@ -269,7 +268,7 @@ a {
   justify-content: center;
   justify-content: space-evenly;
   color: rgb(0, 0, 0);
-
+  margin-bottom: 50px;
   h3 {
     text-align: center;
     margin: 1rem 0;
@@ -336,7 +335,7 @@ img {
   }
 }
 p {
-  padding: 0 10px;
+  padding: 0 30px;
   font-weight: bold;
   
 
@@ -371,7 +370,7 @@ p {
     margin: 0 auto;
     background-color: #0fb6e9;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
