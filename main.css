@@ -328,7 +328,8 @@ a {
 
 .services-section h3 {
   text-align: center;
-  margin: 1rem 0;
+  margin: auto;
+  padding-top: 25px;
   color: black;
 }
 
@@ -749,4 +750,6 @@ p {
     margin: 20px 50px 0 0;
   }
 }
+
+/* Portrait*/
 /*# sourceMappingURL=main.css.map */
