@@ -293,7 +293,7 @@ a {
 
 .services-text {
   font-weight: 500;
-  color: #312f2f;
+  color: #050505;
   font-size: 18px;
   -webkit-animation-name: moveOutStill;
           animation-name: moveOutStill;
@@ -508,7 +508,8 @@ p {
 .copy li {
   list-style: none;
   float: left;
-  font-weight: bold;
+  padding-top: 15px;
+  font-size: 20px;
 }
 
 .copy {
@@ -532,7 +533,6 @@ p {
 }
 
 .about {
-  font-family: "Poppins";
   text-align: center;
   color: white;
   -webkit-transition: 3s;
