@@ -13,7 +13,7 @@
 /*            root color area end              */
 /*---------------------------------------------*/
 body {
-  background-color: #d5ebfa;
+  background-color: #BEDCFE;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -304,18 +304,30 @@ a {
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   font-family: "Verdana";
+  -bottom: 30px;
 }
 
 .services-section {
   margin-top: 30px;
   font-size: 18px;
   font-family: Roboto, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   color: black;
 }
 
 .services-section h3 {
   text-align: center;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   color: black;
 }
 
@@ -325,56 +337,79 @@ a {
 
 .services-section .fish-section {
   background-color: #82dff66b;
-  margin: 0 10px 20px -30px;
   -webkit-animation-name: moveOut;
           animation-name: moveOut;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  width: 30%;
+  margin: 20px 0;
+  -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+}
+
+.services-section img {
+  width: 100%;
+  padding: 30px;
 }
 
 .services-section .chicken-section {
   background-color: #82dff66b;
-  margin: 0 10px 20px 0;
   -webkit-animation-name: moveOut;
           animation-name: moveOut;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
+  width: 30%;
+  margin: 20px 0;
+  -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
 }
 
 .services-section .shrimp-section {
   background-color: #82dff66b;
-  margin: 0 10px 20px 0;
   -webkit-animation-name: moveOut;
           animation-name: moveOut;
   -webkit-animation-duration: 6s;
           animation-duration: 6s;
+  width: 30%;
+  margin: 20px 0;
+  -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
 }
 
 .services-section .crab-section {
   background-color: #82dff66b;
-  margin: 0 10px 20px -30px;
   -webkit-animation-name: moveOut;
           animation-name: moveOut;
   -webkit-animation-duration: 7s;
           animation-duration: 7s;
+  margin: 20px 0;
+  width: 30%;
+  -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
 }
 
 .services-section .gizzard-section {
   background-color: #82dff66b;
-  margin: 0 10px 20px 0;
   -webkit-animation-name: moveOut;
           animation-name: moveOut;
   -webkit-animation-duration: 8s;
           animation-duration: 8s;
+  width: 30%;
+  margin: 20px 0;
+  -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
 }
 
 .services-section .prawn-section {
   background-color: #82dff66b;
-  margin: 0 10px 20px 0;
   -webkit-animation-name: moveOut;
           animation-name: moveOut;
   -webkit-animation-duration: 9s;
           animation-duration: 9s;
+  width: 30%;
+  margin: 20px 0;
+  -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
 }
 
 p {
@@ -443,7 +478,7 @@ p {
 }
 
 .main-footer .social-links ul li h3 {
-  color: black;
+  color: #201e1e;
 }
 
 .main-footer .social-links ul li .follow {
@@ -635,27 +670,38 @@ p {
   }
   .services-text {
     font-size: 16px;
+    margin: 10px;
   }
   .services-section .fish-section {
     margin: 0 0 10px 0;
+    width: 100%;
+  }
+  .services-section {
+    margin: 20px;
   }
   .services-section .chicken-section {
     margin: 10px 0;
+    width: 100%;
   }
   .services-section .shrimp-section {
     margin: 10px 0;
+    width: 100%;
   }
   .services-section .crab-section {
     margin: 10px 0;
+    width: 100%;
   }
   .services-section .gizzard-section {
     margin: 10px 0;
+    width: 100%;
   }
   .services-section .prawn-section {
     margin: 10px 0;
+    width: 100%;
   }
   .jumbo-box {
     margin-top: 30px;
+    width: 100%;
   }
   .pre-jumbo {
     width: 10%;
