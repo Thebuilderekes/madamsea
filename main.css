@@ -293,7 +293,7 @@ a {
 .services-text {
   font-weight: 500;
   color: #050505;
-  font-size: 18px;
+  font-size: 20px;
   -webkit-animation-name: moveOutStill;
           animation-name: moveOutStill;
   -webkit-animation-duration: 3s;
@@ -668,7 +668,7 @@ p {
     font-size: 24px;
   }
   .services-text {
-    font-size: 16px;
+    font-size: 20px;
     margin: 10px;
   }
   .services-section .fish-section {
