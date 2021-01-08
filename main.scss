@@ -96,12 +96,6 @@ header {
     h1 {
       text-decoration: none;
     }
-    h1 a span {
-      font-family: "Lato", sans-serif;
-      font-weight: 900;
-
-      color: $primaryfont-color;
-    }
 
     h1 a {
       font-weight: 700;
@@ -111,6 +105,14 @@ header {
       font-size: 40px;
       text-decoration: none;
     }
+    h1 a span {
+  
+      font-weight: 900;
+
+      color: $primaryfont-color;
+    }
+
+    
   }
 }
 
@@ -227,6 +229,13 @@ a {
 /*-------------------------------------------- */
 /*            keyframes end                    */
 /*---------------------------------------------*/
+
+
+
+/*-------------------------------------------- */
+/*            services area starts                   */
+/*---------------------------------------------*/
+
 
 .services-header {
   text-align: center;
@@ -541,6 +550,11 @@ p {
 /*-------------------------------------------- */
 /*               About Us area end             */
 /*---------------------------------------------*/
+
+
+
+
+
 /*------------------------------------------------ */
 /* MEDIA QUERIES CODES                    */
 /*------------------------------------------------*/
@@ -698,7 +712,3 @@ p {
   }
 }
 
-/* 2436x1125px at 458ppi */
-
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-}

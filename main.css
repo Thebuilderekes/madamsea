@@ -97,12 +97,6 @@ header .hero-text_primary .hero-text_primary_sub {
   text-decoration: none;
 }
 
-.main-header .main-header_text h1 a span {
-  font-family: "Lato", sans-serif;
-  font-weight: 900;
-  color: #ffffff;
-}
-
 .main-header .main-header_text h1 a {
   font-weight: 700;
   font-family: "Arima Madurai", cursive;
@@ -110,6 +104,11 @@ header .hero-text_primary .hero-text_primary_sub {
   color: #0ae8f0;
   font-size: 40px;
   text-decoration: none;
+}
+
+.main-header .main-header_text h1 a span {
+  font-weight: 900;
+  color: #ffffff;
 }
 
 h3 {
@@ -266,6 +265,9 @@ a {
 
 /*-------------------------------------------- */
 /*            keyframes end                    */
+/*---------------------------------------------*/
+/*-------------------------------------------- */
+/*            services area starts                   */
 /*---------------------------------------------*/
 .services-header {
   text-align: center;
@@ -747,6 +749,4 @@ p {
     margin: 20px 50px 0 0;
   }
 }
-
-/* 2436x1125px at 458ppi */
 /*# sourceMappingURL=main.css.map */
