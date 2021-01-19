@@ -18,9 +18,10 @@ $secondary-color: #0000;
 /*---------------------------------------------*/
 
 body {
-  background-color: #e8f8ff;
+ background-color: rgb(249, 255, 254);
+
   background-size: cover;
-  background-attachment: fixed;
+ 
   background-repeat: no-repeat;
   height: 100%;
 }
@@ -240,6 +241,7 @@ a {
   background-color: rgb(249, 255, 254);
   margin: 0;
   width: 100%;
+  
 }
 
 .services-header {
@@ -274,18 +276,19 @@ a {
   backface-visibility: hidden;
   animation-timing-function: ease-in;
  font-family: "Lato";
- padding-bottom: 50px;
+ padding-bottom: 200px;
 }
 .services-section {
-  padding-top: 30px;
-  background-color: honeydew;
+  
+  background-color: rgb(226, 251, 241);
   font-size: 18px;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-evenly;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
+
  
 
   h3 {
@@ -375,6 +378,13 @@ p {
 /*               Gallery area                  */
 /*---------------------------------------------*/
 
+
+
+.gallery-section {
+
+
+  padding-bottom: 50px;
+}
 .gallery-header {
   text-align: center;
   color: black;
@@ -415,6 +425,7 @@ p {
   height: 24rem;
   background-color: rgb(18, 167, 180);
   font-family: Roboto, sans-serif;
+  
   .social-links {
     ul {
       margin: 50px 0 0 0;
@@ -622,6 +633,12 @@ p {
   .nav-link a {
     font-weight: 700;
   }
+
+
+  .gallery-section {
+
+    padding-bottom: 50px;
+  }
   .gallery-header {
     font-size: 24px;
   }
@@ -631,16 +648,16 @@ p {
   }
   .services-text {
     font-size: 20px;
-    margin: 10px;
+    padding-bottom: 100px;
+   
   }
+
+
   .services-section .fish-section {
     margin: 0 0 10px 0;
     width:100%;
   }
-  .services-section   {
 
-    margin: 20px;
-  }
   .services-section .chicken-section {
     margin: 10px 0;
     width:100%;
@@ -692,7 +709,16 @@ p {
   .main-footer {
     width: 100%;
     height: 45rem;
+
+    // display: flex;
+    // flex-direction: column;
+ 
+
+
+
   }
+
+
   h3 {
     font-size: 22px;
   }
