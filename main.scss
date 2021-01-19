@@ -18,7 +18,7 @@ $secondary-color: #0000;
 /*---------------------------------------------*/
 
 body {
-  background-color: #89DAFF;
+  background-color: #e8f8ff;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -133,7 +133,7 @@ h3 {
 
   .navbar li {
     
-    font-family: "Arima Madurai", cursive;
+    // font-family: "Arima Madurai", cursive;
     display: inline-block;
     font-weight: bold;
    
@@ -235,13 +235,19 @@ a {
 /*-------------------------------------------- */
 /*            services area starts                   */
 /*---------------------------------------------*/
+.our-services {
 
+  background-color: rgb(249, 255, 254);
+  margin: 0;
+  width: 100%;
+}
 
 .services-header {
   text-align: center;
   color: black;
   font-weight: 700;
-  margin-top: 60px;
+  margin-top: 50px;
+  padding-top: 50px;
   animation-name: moveInRight;
   animation-duration: 3s;
   text-transform: uppercase;
@@ -259,30 +265,35 @@ a {
 }
 
 .services-text {
+ 
   font-weight: 500;
-  color: rgb(5, 5, 5);
+  color: rgb(58, 56, 56);
   font-size: 20px;
   animation-name: moveOutStill;
   animation-duration: 3s;
   backface-visibility: hidden;
   animation-timing-function: ease-in;
- font-family: "Verdana";
+ font-family: "Lato";
+ padding-bottom: 50px;
 }
 .services-section {
-  margin-top: 30px;
+  padding-top: 30px;
+  background-color: honeydew;
   font-size: 18px;
   font-family: Roboto, sans-serif;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-evenly;
-  color: rgb(0, 0, 0);
-  margin-bottom: 50px;
+  padding-bottom: 30px;
+ 
+
   h3 {
     text-align: center;
     margin: auto;
       padding-top: 25px;
     color: black;
+    font-weight: 500;
   }
   .paragraph {
      font-weight: normal;
@@ -402,7 +413,7 @@ p {
 .main-footer {
   width: 100%;
   height: 24rem;
-  background-color: rgb(91, 166, 228);
+  background-color: rgb(18, 167, 180);
   font-family: Roboto, sans-serif;
   .social-links {
     ul {
@@ -414,8 +425,9 @@ p {
         font-weight: 500;
       }
 
-      li h3 {
+      li h2 {
         color: rgb(32, 30, 30);
+       
       }
 
       li .follow {
@@ -499,17 +511,17 @@ p {
 /*               About Us page area            */
 /*---------------------------------------------*/
 
-.back-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(images/aboutpage.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
+// .back-img {
+//   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+//     url(images/aboutpage.jpg);
+//   background-size: cover;
+//   background-attachment: fixed;
+//   background-repeat: no-repeat;
+// }
 .about {
 
   text-align: center;
-  color: white;
+  color: rgb(223, 39, 39);
   transition: 3s;
   padding: 20px 0 0 0;
   font-style: normal;
@@ -525,28 +537,28 @@ p {
   margin-top: 30px;
   margin-bottom: 5px;
 }
-.jumbotron {
-  background-color: rgba(4, 9, 77, 0.424);
-  width: 100%;
-  margin: auto;
-  margin-top: 1.5rem;
-  border-radius: 0.5rem;
-  margin-bottom: 50px;
+// .jumbotron {
+//   background-color: rgba(4, 9, 77, 0.424);
+//   width: 100%;
+//   margin: auto;
+//   margin-top: 1.5rem;
+//   border-radius: 0.5rem;
+//   margin-bottom: 50px;
 
-  .jumbotron p {
-    font-family: Roboto, sans-serif;
-    color: white;
-    font-size: 1.5rem;
-    padding: 0 0.5rem;
-  }
-}
-.jumbo-box {
-  display: flex;
-}
+//   .jumbotron p {
+//     font-family: Roboto, sans-serif;
+//     color: white;
+//     font-size: 1.5rem;
+//     padding: 0 0.5rem;
+//   }
+// }
+// .jumbo-box {
+//   display: flex;
+// }
 
-.jumbo-box .jumbotron p {
-  color: white;
-}
+// .jumbo-box .jumbotron p {
+//   color: white;
+// }
 
 /*-------------------------------------------- */
 /*               About Us area end             */

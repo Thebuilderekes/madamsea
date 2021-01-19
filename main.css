@@ -13,7 +13,7 @@
 /*            root color area end              */
 /*---------------------------------------------*/
 body {
-  background-color: #89DAFF;
+  background-color: #e8f8ff;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -127,7 +127,6 @@ h3 {
 }
 
 .navbar .navbar li {
-  font-family: "Arima Madurai", cursive;
   display: inline-block;
   font-weight: bold;
 }
@@ -269,11 +268,18 @@ a {
 /*-------------------------------------------- */
 /*            services area starts                   */
 /*---------------------------------------------*/
+.our-services {
+  background-color: #f9fffe;
+  margin: 0;
+  width: 100%;
+}
+
 .services-header {
   text-align: center;
   color: black;
   font-weight: 700;
-  margin-top: 60px;
+  margin-top: 50px;
+  padding-top: 50px;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
   -webkit-animation-duration: 3s;
@@ -294,7 +300,7 @@ a {
 
 .services-text {
   font-weight: 500;
-  color: #050505;
+  color: #3a3838;
   font-size: 20px;
   -webkit-animation-name: moveOutStill;
           animation-name: moveOutStill;
@@ -304,11 +310,13 @@ a {
           backface-visibility: hidden;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
-  font-family: "Verdana";
+  font-family: "Lato";
+  padding-bottom: 50px;
 }
 
 .services-section {
-  margin-top: 30px;
+  padding-top: 30px;
+  background-color: honeydew;
   font-size: 18px;
   font-family: Roboto, sans-serif;
   display: -webkit-box;
@@ -322,8 +330,7 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  color: black;
-  margin-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .services-section h3 {
@@ -331,6 +338,7 @@ a {
   margin: auto;
   padding-top: 25px;
   color: black;
+  font-weight: 500;
 }
 
 .services-section .paragraph {
@@ -465,7 +473,7 @@ p {
 .main-footer {
   width: 100%;
   height: 24rem;
-  background-color: #5ba6e4;
+  background-color: #12a7b4;
   font-family: Roboto, sans-serif;
 }
 
@@ -479,7 +487,7 @@ p {
   font-weight: 500;
 }
 
-.main-footer .social-links ul li h3 {
+.main-footer .social-links ul li h2 {
   color: #201e1e;
 }
 
@@ -561,17 +569,9 @@ p {
 /*-------------------------------------------- */
 /*               About Us page area            */
 /*---------------------------------------------*/
-.back-img {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(images/aboutpage.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/aboutpage.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
 .about {
   text-align: center;
-  color: white;
+  color: #df2727;
   -webkit-transition: 3s;
   transition: 3s;
   padding: 20px 0 0 0;
@@ -587,32 +587,6 @@ p {
   background-color: #0fb6e9;
   margin-top: 30px;
   margin-bottom: 5px;
-}
-
-.jumbotron {
-  background-color: rgba(4, 9, 77, 0.424);
-  width: 100%;
-  margin: auto;
-  margin-top: 1.5rem;
-  border-radius: 0.5rem;
-  margin-bottom: 50px;
-}
-
-.jumbotron .jumbotron p {
-  font-family: Roboto, sans-serif;
-  color: white;
-  font-size: 1.5rem;
-  padding: 0 0.5rem;
-}
-
-.jumbo-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.jumbo-box .jumbotron p {
-  color: white;
 }
 
 /*-------------------------------------------- */
