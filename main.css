@@ -44,10 +44,10 @@ header .hero-text {
 
 header .hero-text .button-primary {
   color: #ffffff;
-  background-color: #1fbaf8;
-  border-radius: 5px;
+  background-color: #61cbf5;
+  border-radius: 50px;
   font-size: 30px;
-  padding: 2px 2px;
+  padding: 2px 5px;
   border-color: #61cbf5;
   font-family: "Arima Madurai", cursive;
   text-transform: uppercase;
@@ -294,6 +294,21 @@ a {
 /*-------------------------------------------- */
 /*            keyframes end                    */
 /*---------------------------------------------*/
+.about-us-section {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+
+.about-header {
+  font-size: 24px;
+}
+
 /*-------------------------------------------- */
 /*            services area starts                   */
 /*---------------------------------------------*/
@@ -314,6 +329,7 @@ a {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   text-transform: uppercase;
+  font-size: 24px;
 }
 
 .services-header:after, .about-header:after {
@@ -325,10 +341,6 @@ a {
   background-color: #0fb6e9;
   margin-top: 20px;
   margin-bottom: 30px;
-}
-
-.about-header {
-  font-size: 24px;
 }
 
 .services-text, .about-text {
@@ -344,19 +356,8 @@ a {
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   font-family: "Lato";
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   line-height: 2;
-}
-
-.about-us-section {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
 }
 
 .services-section {
@@ -374,6 +375,7 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -399,6 +401,16 @@ a {
   margin: 20px 0;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
           box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.3s;
+  transition: top ease 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.services-section .fish-section:hover {
+  top: -10px;
 }
 
 .services-section img {
@@ -416,6 +428,16 @@ a {
   margin: 20px 0;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
           box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.3s;
+  transition: top ease 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.services-section .chicken-section:hover {
+  top: -10px;
 }
 
 .services-section .shrimp-section {
@@ -428,6 +450,16 @@ a {
   margin: 20px 0;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
           box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.3s;
+  transition: top ease 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.services-section .shrimp-section:hover {
+  top: -10px;
 }
 
 .services-section .crab-section {
@@ -440,6 +472,16 @@ a {
   width: 30%;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
           box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.3s;
+  transition: top ease 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.services-section .crab-section:hover {
+  top: -10px;
 }
 
 .services-section .gizzard-section {
@@ -452,6 +494,16 @@ a {
   margin: 20px 0;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
           box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.3s;
+  transition: top ease 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.services-section .gizzard-section:hover {
+  top: -10px;
 }
 
 .services-section .prawn-section {
@@ -464,6 +516,16 @@ a {
   margin: 20px 0;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
           box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  position: relative;
+  top: 0;
+  -webkit-transition: top ease 0.3s;
+  transition: top ease 0.3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.services-section .prawn-section:hover {
+  top: -10px;
 }
 
 p {
@@ -492,6 +554,7 @@ p {
   font-weight: 700;
   margin-bottom: 30px;
   text-transform: uppercase;
+  font-size: 24px;
 }
 
 .gallery-header:after {

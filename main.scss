@@ -11,8 +11,6 @@
 $primaryfont-color: #ffffff;
 $headerfont-color: #0fb6e9;
 $section-color: #82dff66b;
-$secondary-color: #0000;
-
 /*-------------------------------------------- */
 /*            root color area end              */
 /*---------------------------------------------*/
@@ -50,10 +48,10 @@ header {
 
     .button-primary {
       color: $primaryfont-color;
-      background-color: #1fbaf8;
-      border-radius: 5px;
+      background-color:  #61cbf5;
+      border-radius: 50px;
       font-size: 30px;
-      padding: 2px 2px;
+      padding: 2px 5px;
       border-color: #61cbf5;
       font-family: "Arima Madurai", cursive;
       text-transform: uppercase;
@@ -267,48 +265,18 @@ a {
 // /*-------------------------------------------- */
 // /*            about area starts                   */
 // /*---------------------------------------------*/
-// .our-services {
 
-//   background-color: rgb(249, 255, 254);
-//   margin: 0;
-//   width: 100%;
-  
-// }
+.about-us-section {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  backface-visibility: hidden;
+  animation-timing-function: ease-in;
 
-// .about-header {
-//   text-align: center;
-//   color: black;
-//   font-weight: 700;
-//   margin-top: 50px;
-//   padding-top: 50px;
-//   animation-name: moveInRight;
-//   animation-duration: 3s;
-//   text-transform: uppercase;
+}
+.about-header {
 
-//   &:after {
-//     display: block;
-//     height: 2px;
-//     width: 150px;
-//     content: "";
-//     margin: 0 auto;
-//     background-color: #0fb6e9;
-//     margin-top: 20px;
-//     margin-bottom: 30px;
-//   }
-// }
-
-// .services-text {
- 
-//   font-weight: 500;
-//   color: rgb(58, 56, 56);
-//   font-size: 20px;
-//   animation-name: moveOutStill;
-//   animation-duration: 3s;
-//   backface-visibility: hidden;
-//   animation-timing-function: ease-in;
-//  font-family: "Lato";
-//  padding-bottom: 200px;
-// }
+  font-size: 24px;
+}
 
 /*-------------------------------------------- */
 /*            services area starts                   */
@@ -330,7 +298,8 @@ a {
   animation-name: moveInRight;
   animation-duration: 3s;
   text-transform: uppercase;
-
+ font-size: 24px;
+ 
   &:after {
     display: block;
     height: 2px;
@@ -342,10 +311,7 @@ a {
     margin-bottom: 30px;
   }
 }
-.about-header {
 
-  font-size: 24px;
-}
 .services-text, .about-text {
  
   font-weight: 500;
@@ -356,18 +322,9 @@ a {
   backface-visibility: hidden;
   animation-timing-function: ease-in;
  font-family: "Lato";
- padding-bottom: 200px;
+ padding-bottom: 100px;
  line-height: 2;
 }
-
-.about-us-section {
-  animation-name: fadeIn;
-  animation-duration: 3s;
-  backface-visibility: hidden;
-  animation-timing-function: ease-in;
-
-}
-
 
 .services-section {
   
@@ -378,6 +335,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   justify-content: space-evenly;
+  padding-top: 50px;
   padding-bottom: 50px;
 
  
@@ -399,7 +357,19 @@ a {
     width: 30%;
     margin: 20px 0;
     box-shadow:4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+  backface-visibility: hidden;
+
   }
+
+  .fish-section:hover {
+    top: -10px;
+  }
+
+
+
 img {
   width: 100%;
   padding: 30px;
@@ -411,6 +381,15 @@ img {
     width: 30%;
     margin: 20px 0;
     box-shadow:4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+  backface-visibility: hidden;
+
+  }
+
+  .chicken-section:hover {
+    top: -10px;
   }
 
   .shrimp-section {
@@ -420,8 +399,16 @@ img {
     width: 30%;
     margin: 20px 0;
     box-shadow:4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+  backface-visibility: hidden;
+
   }
 
+  .shrimp-section:hover {
+    top: -10px;
+  }
   .crab-section {
     background-color: $section-color;
   
@@ -430,7 +417,16 @@ img {
     margin: 20px 0;
     width: 30%; 
      box-shadow:4px 4px 11px 0px rgba(50, 50, 50, 0.61);
-  }
+     position: relative;
+     top: 0;
+     transition: top ease 0.3s;
+   backface-visibility: hidden;
+ 
+   }
+ 
+   .crab-section:hover {
+     top: -10px;
+   }
 
   .gizzard-section {
     background-color: $section-color;
@@ -439,7 +435,19 @@ img {
     width: 30%;
     margin: 20px 0;
     box-shadow:4px 4px 11px 0px rgba(50, 50, 50, 0.61); 
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+  backface-visibility: hidden;
+
   }
+
+  .gizzard-section:hover {
+    top: -10px;
+  }
+
+
+
   .prawn-section {
     background-color: $section-color;
     animation-name: moveOut;
@@ -447,6 +455,15 @@ img {
     width: 30%;
     margin: 20px 0;
     box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+  backface-visibility: hidden;
+
+  }
+
+  .prawn-section:hover {
+    top: -10px;
   }
 }
 p {
@@ -483,6 +500,7 @@ p {
   // margin-top: 60px;
   margin-bottom: 30px;
   text-transform: uppercase;
+  font-size: 24px;
 
   &:after {
     display: block;
