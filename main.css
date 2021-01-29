@@ -12,7 +12,7 @@
 /*            root color area end              */
 /*---------------------------------------------*/
 body {
-  background-color: #f9fffe;
+  background-color: #edfaf8;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -20,6 +20,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /*-------------------------------------------- */
@@ -309,11 +310,90 @@ a {
   font-size: 24px;
 }
 
+
+
+
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #3fbbc0;
+  bottom: 0;
+  left: calc(50% - 25px);
+  
+}
+
+.section-title p {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 20px;
+}
+.gallery .owl-nav, .gallery .owl-dots {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.gallery .owl-item {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+
+.gallery .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e0f4f5 !important;
+}
+
+.gallery .owl-dot.active {
+  background-color: #3fbbc0 !important;
+}
+
+.gallery .gallery-carousel .owl-stage-outer {
+  overflow: hidden;
+}
+
+.gallery .gallery-carousel .center {
+  border: 6px solid #3fbbc0;
+  margin: -10px;
+  box-sizing: content-box;
+  padding: 4px;
+  background: #fff;
+  z-index: 1;
+}
 /*-------------------------------------------- */
 /*            services area starts                   */
 /*---------------------------------------------*/
-.our-services, .about-us {
-  background-color: #f9fffe;
+.our-services {
+  background-color: #edfaf8;
   margin: 0;
   width: 100%;
 }
@@ -322,7 +402,7 @@ a {
   text-align: center;
   color: black;
   font-weight: 700;
-  margin-top: 50px;
+  margin-top: 40px;
   padding-top: 50px;
   -webkit-animation-name: moveInRight;
           animation-name: moveInRight;
@@ -339,7 +419,7 @@ a {
   content: "";
   margin: 0 auto;
   background-color: #0fb6e9;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
@@ -356,7 +436,7 @@ a {
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
   font-family: "Lato";
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   line-height: 2;
 }
 
@@ -541,49 +621,57 @@ p {
 /*-------------------------------------------- */
 /*               Services area end             */
 /*---------------------------------------------*/
-/*-------------------------------------------- */
-/*               Gallery area                  */
-/*---------------------------------------------*/
-.gallery-section {
-  padding-bottom: 50px;
+/*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+.gallery {
+  overflow: hidden;
 }
 
-.gallery-header {
+.gallery .owl-nav, .gallery .owl-dots {
+  margin-top: 25px;
   text-align: center;
-  color: black;
-  font-weight: 700;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  font-size: 24px;
 }
 
-.gallery-header:after {
-  display: block;
-  height: 2px;
-  width: 150px;
-  content: "";
-  margin: 0 auto;
-  background-color: #0fb6e9;
-  margin-top: 20px;
-  margin-bottom: 30px;
+.gallery .owl-item {
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
 }
 
-.carousel-inner {
-  width: 100%;
-  height: 500px;
-  margin-bottom: 20px;
+.gallery .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #e0f4f5 !important;
 }
 
-/*-------------------------------------------- */
-/*            Gallery area end                  */
-/*---------------------------------------------*/
+.gallery .owl-dot.active {
+  background-color: #3fbbc0 !important;
+}
+
+.gallery .gallery-carousel .owl-stage-outer {
+  overflow: visible;
+}
+
+.gallery .gallery-carousel .center {
+  border: 6px solid #3fbbc0;
+  margin: -10px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 4px;
+  background: #fff;
+  z-index: 1;
+}
+
 /*-------------------------------------------- */
 /*               footer  area                  */
 /*---------------------------------------------*/
 .main-footer {
   width: 100%;
   height: 24rem;
-  background-color: #12a7b4;
+  background-color: #058686;
   font-family: Roboto, sans-serif;
 }
 
@@ -684,7 +772,7 @@ p {
   color: #df2727;
   -webkit-transition: 3s;
   transition: 3s;
-  padding: 20px 0 0 0;
+
   font-style: normal;
 }
 
@@ -707,6 +795,12 @@ p {
 /*------------------------------------------------*/
 /* iphone 6/7/8 and galaxy s5 */
 @media only screen and (min-width: 300px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+
+  
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
   /* Portrait and Landscape */
   .container {
     overflow: hidden;
