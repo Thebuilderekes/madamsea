@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /*-------------------------------------------- */
@@ -15,11 +15,10 @@ body {
   background-color: #edfaf8;
   background-size: cover;
   background-repeat: no-repeat;
- width: 100%;
+  width: 100%;
   height: 100%;
   /* overflow-x: hidden; */
   /* overflow: hidden; */
-
 }
 
 html {
@@ -27,22 +26,28 @@ html {
   max-width: 100vw;
   padding: 0;
   margin: 0;
-overflow-x: hidden;
-
+  overflow-x: hidden;
 }
 
 /*-------------------------------------------- */
 /*               Header area                   */
 /*---------------------------------------------*/
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.294))), url(images/crabs.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.294) rgba(0, 0, 0, 0.5)), url(images/crabs.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.294))
+    ),
+    url(images/crabs.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.294) rgba(0, 0, 0, 0.5)),
+    url(images/crabs.jpg);
   background-attachment: fixed;
   background-size: cover;
   width: 100%;
   height: 100vh;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 header .hero-text {
@@ -52,7 +57,7 @@ header .hero-text {
 }
 
 header .hero-text .button-primary {
-  color: #ffffff;
+  color: #201e1e;
   background-color: #61cbf5;
   /* border-radius: 50px; */
   font-size: 30px;
@@ -62,29 +67,28 @@ header .hero-text .button-primary {
   text-transform: uppercase;
   font-weight: 700;
   -webkit-animation-name: moveInRight;
-          animation-name: moveInRight;
+  animation-name: moveInRight;
   -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  animation-duration: 4s;
 }
 
 header .hero-text .button-primary:hover {
   -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  transform: translateY(3px);
 }
 
 header .hero-text_primary {
   font-weight: bolder;
   color: #0ae8f0;
   -webkit-animation-name: moveOutStill;
-          animation-name: moveOutStill;
+  animation-name: moveOutStill;
   -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  animation-duration: 4s;
   font-size: 50px;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   overflow: hidden;
   font-family: "Arima Madurai", cursive;
-
 }
 
 header .hero-text_primary .hero-text_primary_sub {
@@ -126,6 +130,7 @@ h3 {
 /*-------------------------------------------- */
 /*            Header area end                  */
 /*---------------------------------------------*/
+
 /*-------------------------------------------- */
 /*               Navbar area                   */
 /*---------------------------------------------*/
@@ -161,6 +166,7 @@ h3 {
 
 a {
   font-weight: 300;
+  text-decoration: none;
 }
 
 .navbar li a {
@@ -176,7 +182,12 @@ a {
 .navbar-nav .nav-item .nav-link {
   padding-right: 20px;
 }
-
+a.button-primary {
+  font-weight: 600;
+  font-size: 50px;
+  text-decoration: none;
+  color: #201e1e;
+}
 /*-------------------------------------------- */
 /*               Navbar area end               */
 /*---------------------------------------------*/
@@ -204,12 +215,12 @@ a {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(-10px);
-            transform: translate3d(-10px);
+    transform: translate3d(-10px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -217,12 +228,12 @@ a {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(-10px);
-            transform: translate3d(-10px);
+    transform: translate3d(-10px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -230,12 +241,12 @@ a {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-80px);
-            transform: translateX(-80px);
+    transform: translateX(-80px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -243,12 +254,12 @@ a {
   0% {
     opacity: 0;
     -webkit-transform: translateX(-80px);
-            transform: translateX(-80px);
+    transform: translateX(-80px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -256,7 +267,7 @@ a {
   0% {
     opacity: 0;
     -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    transform: translateX(100px);
   }
   /*
 80% {
@@ -266,7 +277,7 @@ a {
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -274,7 +285,7 @@ a {
   0% {
     opacity: 0;
     -webkit-transform: translateX(100px);
-            transform: translateX(100px);
+    transform: translateX(100px);
   }
   /*
 80% {
@@ -284,7 +295,7 @@ a {
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -292,12 +303,12 @@ a {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(-10px);
-            transform: translate3d(-10px);
+    transform: translate3d(-10px);
   }
   100% {
     opacity: 1;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
 }
 
@@ -306,24 +317,21 @@ a {
 /*---------------------------------------------*/
 .about-us-section {
   -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
+  animation-name: fadeIn;
   -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
 }
 
 .about-header {
   font-size: 24px;
 }
 
-
-
-
 /*--------------------------------------------------------------
-# Gallery
+# GALLERY SECTION
 --------------------------------------------------------------*/
 .gallery {
   overflow: hidden;
@@ -332,10 +340,6 @@ a {
   padding-bottom: 50px;
   overflow: hidden;
 }
-/* .gallery-carousel {
-
-  overflow: hidden;
-} */
 
 .section-title {
   text-align: center;
@@ -352,7 +356,7 @@ a {
 }
 
 .section-title h2::after {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   width: 50px;
@@ -360,7 +364,6 @@ a {
   background: #3fbbc0;
   bottom: 0;
   left: calc(50% - 25px);
-  
 }
 
 .section-title p {
@@ -368,7 +371,8 @@ a {
   font-weight: 400;
   font-size: 20px;
 }
-.gallery .owl-nav, .gallery .owl-dots {
+.gallery .owl-nav,
+.gallery .owl-dots {
   margin-top: 25px;
   text-align: center;
 }
@@ -412,21 +416,23 @@ a {
   width: 100%;
 }
 
-.services-header, .about-header {
+.services-header,
+.about-header {
   text-align: center;
   color: black;
   font-weight: 700;
   margin-top: 40px;
   padding-top: 50px;
   -webkit-animation-name: moveInRight;
-          animation-name: moveInRight;
+  animation-name: moveInRight;
   -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  animation-duration: 3s;
   text-transform: uppercase;
   font-size: 24px;
 }
 
-.services-header:after, .about-header:after {
+.services-header:after,
+.about-header:after {
   display: block;
   height: 2px;
   width: 100px;
@@ -437,18 +443,19 @@ a {
   margin-bottom: 30px;
 }
 
-.services-text, .about-text {
+.services-text,
+.about-text {
   font-weight: 500;
   color: #3a3838;
   font-size: 20px;
   -webkit-animation-name: moveOutStill;
-          animation-name: moveOutStill;
+  animation-name: moveOutStill;
   -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
   font-family: "Lato";
   padding-bottom: 50px;
   line-height: 2;
@@ -457,18 +464,16 @@ a {
 .services-section {
   background-color: #ffffff;
   font-size: 18px;
-  font-family: Roboto, sans-serif;
+  font-family: "Lato";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -488,19 +493,19 @@ a {
 .services-section .fish-section {
   background-color: #82dff66b;
   -webkit-animation-name: moveOut;
-          animation-name: moveOut;
+  animation-name: moveOut;
   -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  animation-duration: 4s;
   width: 30%;
   margin: 20px 0;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
-          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
   position: relative;
   top: 0;
   -webkit-transition: top ease 0.3s;
   transition: top ease 0.3s;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .services-section .fish-section:hover {
@@ -515,19 +520,19 @@ a {
 .services-section .chicken-section {
   background-color: #82dff66b;
   -webkit-animation-name: moveOut;
-          animation-name: moveOut;
+  animation-name: moveOut;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   width: 30%;
   margin: 20px 0;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
-          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
   position: relative;
   top: 0;
   -webkit-transition: top ease 0.3s;
   transition: top ease 0.3s;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .services-section .chicken-section:hover {
@@ -537,19 +542,19 @@ a {
 .services-section .shrimp-section {
   background-color: #82dff66b;
   -webkit-animation-name: moveOut;
-          animation-name: moveOut;
+  animation-name: moveOut;
   -webkit-animation-duration: 6s;
-          animation-duration: 6s;
+  animation-duration: 6s;
   width: 30%;
   margin: 20px 0;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
-          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
   position: relative;
   top: 0;
   -webkit-transition: top ease 0.3s;
   transition: top ease 0.3s;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .services-section .shrimp-section:hover {
@@ -559,19 +564,19 @@ a {
 .services-section .crab-section {
   background-color: #82dff66b;
   -webkit-animation-name: moveOut;
-          animation-name: moveOut;
+  animation-name: moveOut;
   -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  animation-duration: 7s;
   margin: 20px 0;
   width: 30%;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
-          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
   position: relative;
   top: 0;
   -webkit-transition: top ease 0.3s;
   transition: top ease 0.3s;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .services-section .crab-section:hover {
@@ -581,19 +586,19 @@ a {
 .services-section .gizzard-section {
   background-color: #82dff66b;
   -webkit-animation-name: moveOut;
-          animation-name: moveOut;
+  animation-name: moveOut;
   -webkit-animation-duration: 8s;
-          animation-duration: 8s;
+  animation-duration: 8s;
   width: 30%;
   margin: 20px 0;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
-          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
   position: relative;
   top: 0;
   -webkit-transition: top ease 0.3s;
   transition: top ease 0.3s;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .services-section .gizzard-section:hover {
@@ -603,19 +608,19 @@ a {
 .services-section .prawn-section {
   background-color: #82dff66b;
   -webkit-animation-name: moveOut;
-          animation-name: moveOut;
+  animation-name: moveOut;
   -webkit-animation-duration: 9s;
-          animation-duration: 9s;
+  animation-duration: 9s;
   width: 30%;
   margin: 20px 0;
   -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
-          box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
+  box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.61);
   position: relative;
   top: 0;
   -webkit-transition: top ease 0.3s;
   transition: top ease 0.3s;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .services-section .prawn-section:hover {
@@ -642,7 +647,8 @@ p {
   overflow: hidden;
 }
 
-.gallery .owl-nav, .gallery .owl-dots {
+.gallery .owl-nav,
+.gallery .owl-dots {
   margin-top: 25px;
   text-align: center;
 }
@@ -673,7 +679,7 @@ p {
   border: 6px solid #3fbbc0;
   margin: -10px;
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   padding: 4px;
   background: #fff;
   z-index: 1;
@@ -778,47 +784,18 @@ p {
 /*-------------------------------------------- */
 /*               footer area end             */
 /*---------------------------------------------*/
-/*-------------------------------------------- */
-/*               About Us page area            */
-/*---------------------------------------------*/
-/* .about {
-  text-align: center;
-  color: #df2727;
-  -webkit-transition: 3s;
-  transition: 3s;
 
-  font-style: normal;
-}
-
-.about:after {
-  display: block;
-  height: 2px;
- 
-  content: "";
-  margin: 0 auto;
-  background-color: #0fb6e9;
-  margin-top: 30px;
-  margin-bottom: 5px;
-} */
-
-/*-------------------------------------------- */
-/*               About Us area end             */
-/*---------------------------------------------*/
 /*------------------------------------------------ */
 /* MEDIA QUERIES CODES                    */
 /*------------------------------------------------*/
-/* iphone 6/7/8 and galaxy s5 */
-@media only screen and (min-width: 300px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
 
-
+@media only screen and (max-width: 768px) {
   .html {
     max-width: 100vw;
     padding: 0;
     margin: 0;
     overflow: hidden;
   }
-  
-
 
   /* Portrait and Landscape */
   .container {
@@ -833,6 +810,15 @@ p {
   .main-header .main-header_text h1 a span {
     margin-left: 12px;
   }
+
+  .collapse {
+    background-color: turquoise;
+    color: #201e1e;
+  }
+
+  .collapse .navbar-nav .nav-item .nav-link {
+    color: #201e1e;
+  }
   .hero-text .hero-text_primary {
     font-size: 30px;
   }
@@ -842,10 +828,17 @@ p {
   }
   .button-primary {
     width: 80px;
+    border: none;
+    text-decoration: none;
   }
   .hero-text a .button-primary {
     font-weight: 600;
     font-size: 16px;
+    text-decoration: none;
+  }
+
+  .container .row .hero-text .button-primary {
+    text-decoration: none;
   }
   .hero-text {
     margin-top: 80px;
@@ -867,9 +860,13 @@ p {
     font-size: 24px;
   }
 
-  .gallery{
-    overflow: hidden;
+  .services-section {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .gallery {
+    overflow: hidden;
   }
   .services-header {
     color: black;
@@ -943,15 +940,461 @@ p {
   }
 }
 
-/* Landscape */
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (max-width: 414px) {
+  .html {
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  /* Portrait and Landscape */
   .container {
     overflow: hidden;
   }
-  .main-header_text h1 a {
-    margin: 20px 50px 0 0;
+  h1 a span {
+    margin-right: 45px;
+  }
+  .main-header .main-header_text {
+    margin-right: 7px;
+  }
+  .main-header .main-header_text h1 a span {
+    margin-left: 12px;
+  }
+  .hero-text .hero-text_primary {
+    font-size: 30px;
+  }
+  header .hero-text .hero-text_primary .hero-text_primary_sub {
+    margin-left: -2px;
+    font-size: 18px;
+  }
+  .button-primary {
+    width: 80px;
+    border: none;
+    text-decoration: none;
+  }
+  .hero-text a .button-primary {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .container .row .hero-text .button-primary {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .hero-text {
+    margin-top: 80px;
+  }
+  header .hero-text .button-primary {
+    margin-left: -0.2rem;
+    padding: 0;
+    width: 300px;
+    height: 100px;
+  }
+  .navbar-toggler {
+    background-color: #0ae8f088;
+  }
+  .nav-link a {
+    font-weight: 700;
+  }
+  .gallery-section {
+    padding-bottom: 50px;
+  }
+  .gallery-header {
+    font-size: 24px;
+  }
+
+  .services-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery {
+    overflow: hidden;
+  }
+  .services-header {
+    color: black;
+    font-size: 24px;
+  }
+  .services-text {
+    font-size: 20px;
+    padding-bottom: 100px;
+  }
+  .services-section .fish-section {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  .services-section .chicken-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .shrimp-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .crab-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .gizzard-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .prawn-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .jumbo-box {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .pre-jumbo {
+    width: 10%;
+  }
+  .jumbotron {
+    width: 80%;
+  }
+  .post-jumbo {
+    width: 10%;
+  }
+  .jumbotron p {
+    font-size: 16px;
+  }
+  .carousel-inner {
+    height: 250px;
+  }
+  .main-footer {
+    width: 100%;
+    height: 45rem;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .design {
+    margin-top: 10px;
+  }
+  .design li a {
+    margin-left: -5px;
+  }
+  .social-links .social li a {
+    margin-left: -10px;
   }
 }
 
-/* Portrait*/
-/*# sourceMappingURL=main.css.map */
+@media only screen and (max-width: 375px) {
+  .html {
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  /* Portrait and Landscape */
+  .container {
+    overflow: hidden;
+  }
+  h1 a span {
+    margin-right: 45px;
+  }
+  .main-header .main-header_text {
+    margin-right: 7px;
+  }
+  .main-header .main-header_text h1 a span {
+    margin-left: 12px;
+  }
+
+  .collapse {
+    background-color: turquoise;
+    color: #201e1e;
+  }
+
+  .collapse .navbar-nav .nav-item .nav-link {
+    color: #201e1e;
+  }
+  .hero-text .hero-text_primary {
+    font-size: 30px;
+  }
+  header .hero-text .hero-text_primary .hero-text_primary_sub {
+    margin-left: -2px;
+    font-size: 18px;
+  }
+  .button-primary {
+    width: 80px;
+    border: none;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+  }
+  .hero-text a .button-primary {
+    font-weight: 600;
+    font-size: 80px;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    padding: 0 5px;
+  }
+
+  .hero-text a .button-primary p {
+    padding: 0 5px;
+  }
+
+  .container .row .hero-text .button-primary {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .hero-text {
+    margin-top: 80px;
+  }
+  header .hero-text .button-primary {
+    margin-left: -0.2rem;
+    padding: 0;
+  }
+  .navbar-toggler {
+    background-color: #0ae8f088;
+  }
+  .nav-link a {
+    font-weight: 700;
+  }
+  .gallery-section {
+    padding-bottom: 50px;
+  }
+  .gallery-header {
+    font-size: 24px;
+  }
+
+  .services-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery {
+    overflow: hidden;
+  }
+  .services-header {
+    color: black;
+    font-size: 24px;
+  }
+  .services-text {
+    font-size: 20px;
+    padding-bottom: 100px;
+  }
+  .services-section .fish-section {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  .services-section .chicken-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .shrimp-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .crab-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .gizzard-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .prawn-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .jumbo-box {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .pre-jumbo {
+    width: 10%;
+  }
+  .jumbotron {
+    width: 80%;
+  }
+  .post-jumbo {
+    width: 10%;
+  }
+  .jumbotron p {
+    font-size: 16px;
+  }
+  .carousel-inner {
+    height: 250px;
+  }
+  .main-footer {
+    width: 100%;
+    height: 45rem;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .design {
+    margin-top: 10px;
+  }
+  .design li a {
+    margin-left: -5px;
+  }
+  .social-links .social li a {
+    margin-left: -10px;
+  }
+}
+
+/* iphone 6/7/8 and galaxy s5 */
+@media only screen and (max-width: 360px) {
+  .html {
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  /* Portrait and Landscape */
+  .container {
+    overflow: hidden;
+  }
+  h1 a span {
+    margin-right: 45px;
+  }
+  .main-header .main-header_text {
+    margin-right: 7px;
+  }
+  .main-header .main-header_text h1 a span {
+    margin-left: 12px;
+  }
+  .hero-text .hero-text_primary {
+    font-size: 30px;
+  }
+  header .hero-text .hero-text_primary .hero-text_primary_sub {
+    margin-left: -2px;
+    font-size: 18px;
+  }
+  .button-primary {
+    width: 80px;
+    border: none;
+    text-decoration: none;
+  }
+  .hero-text a .button-primary {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .container .row .hero-text .button-primary {
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .hero-text {
+    margin-top: 80px;
+  }
+  header .hero-text .button-primary {
+    margin-left: -0.2rem;
+    padding: 0;
+  }
+  .navbar-toggler {
+    background-color: #0ae8f088;
+  }
+  .nav-link a {
+    font-weight: 700;
+  }
+
+  .collapse {
+    background-color: turquoise;
+    color: #201e1e;
+  }
+
+  .collapse .navbar-nav .nav-item .nav-link {
+    color: #201e1e;
+  }
+  .gallery-section {
+    padding-bottom: 50px;
+  }
+  .gallery-header {
+    font-size: 24px;
+  }
+
+  .services-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery {
+    overflow: hidden;
+  }
+  .services-header {
+    color: black;
+    font-size: 24px;
+  }
+  .services-text {
+    font-size: 20px;
+    padding-bottom: 100px;
+  }
+  .services-section .fish-section {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+  .services-section .chicken-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .shrimp-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .crab-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .gizzard-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .services-section .prawn-section {
+    margin: 20px 0;
+    width: 100%;
+  }
+  .jumbo-box {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .pre-jumbo {
+    width: 10%;
+  }
+  .jumbotron {
+    width: 80%;
+  }
+  .post-jumbo {
+    width: 10%;
+  }
+  .jumbotron p {
+    font-size: 16px;
+  }
+  .carousel-inner {
+    height: 250px;
+  }
+  .main-footer {
+    width: 100%;
+    height: 45rem;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .design {
+    margin-top: 10px;
+  }
+  .design li a {
+    margin-left: -5px;
+  }
+  .social-links .social li a {
+    margin-left: -10px;
+  }
+}
